@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Sagatavo failu šifrēšanai",
   "EncryptionKeysReload": "Šifrēšanas atslēgas jāievada atkārtoti",
   "EnterName": "Ievadiet vārdu",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Kļūda",
   "ErrorInternalServer": "Iekšējā servera kļūda. Mēģiniet vēlāk vēlreiz.",
   "ErrorReport": "Kļūdas pārskats",

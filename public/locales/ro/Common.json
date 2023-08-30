@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Pregătirea fișierului pentru criptare",
   "EncryptionKeysReload": "Cheile de criptare trebuie reintroduse",
   "EnterName": "Introduceți un nume",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Eroare",
   "ErrorInternalServer": "Eroare internă de server. Încercaţi din nou mai târziu.",
   "ErrorReport": "Raport de eroare",

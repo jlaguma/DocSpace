@@ -196,6 +196,26 @@ const CustomizationNavbar = ({
           {t("PortalRenamingDescription")}
         </Text>
       </div>
+
+      <div className="category-item-wrapper">
+        <div className="category-item-heading">
+          <Link
+            truncate={true}
+            className="inherit-title-link header"
+            onClick={onClickLink}
+            href={combineUrl(
+              window.DocSpaceConfig?.proxy?.url,
+              "/portal-settings/customization/general/timeout-settings"
+            )}
+          >
+            {t("TimeoutSettings")}
+          </Link>
+          <StyledArrowRightIcon size="small" color="#333333" />
+        </div>
+        <Text className="category-item-description">
+          {t("TimeoutSettingsDescription")}
+        </Text>
+      </div>
     </StyledComponent>
   );
 };

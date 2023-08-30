@@ -127,6 +127,9 @@
   <data name="DnsSettingsUpdated" xml:space="preserve">
     <value>DNS設定は更新です</value>
   </data>
+  <data name="TimeoutSettingsUpdated" xml:space="preserve">
+    <value>Timeout Settings Updated</value>
+  </data>
   <data name="DocumentServiceLocationSetting" xml:space="preserve">
     <value>文書サービス位置は更新されました</value>
   </data>

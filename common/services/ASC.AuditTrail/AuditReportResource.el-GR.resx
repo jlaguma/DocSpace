@@ -103,6 +103,9 @@
   <data name="DnsSettingsUpdated" xml:space="preserve">
     <value>Οι Ρυθμίσεις DNS Ενημερώθηκαν</value>
   </data>
+  <data name="TimeoutSettingsUpdated" xml:space="preserve">
+    <value>Timeout Settings Updated</value>
+  </data>
   <data name="DocumentsProduct" xml:space="preserve">
     <value>Έγγραφα</value>
   </data>

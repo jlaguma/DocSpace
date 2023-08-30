@@ -121,6 +121,9 @@
   <data name="DnsSettingsUpdated" xml:space="preserve">
     <value>Đã cập nhật Cài đặt DNS</value>
   </data>
+  <data name="TimeoutSettingsUpdated" xml:space="preserve">
+    <value>Timeout Settings Updated</value>
+  </data>
   <data name="DocumentServiceLocationSetting" xml:space="preserve">
     <value>Đã cập nhật Địa điểm Dịch vụ Tài liệu</value>
   </data>

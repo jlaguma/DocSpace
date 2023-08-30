@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Valmistellaan tiedostoa salausta varten",
   "EncryptionKeysReload": "Salausavaimet on syötettävä uudelleen",
   "EnterName": "Syötä nimi",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Virhe",
   "ErrorInternalServer": "Palvelimen sisäinen virhe. Yritä myöhemmin uudelleen.",
   "ErrorReport": "Vikaraportti",

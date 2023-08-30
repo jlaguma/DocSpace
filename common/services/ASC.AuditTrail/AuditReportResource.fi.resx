@@ -118,6 +118,9 @@
   <data name="DnsSettingsUpdated" xml:space="preserve">
     <value>Nimipalvelimen asetukset ovat päivitetty</value>
   </data>
+  <data name="TimeoutSettingsUpdated" xml:space="preserve">
+    <value>Timeout Settings Updated</value>
+  </data>
   <data name="DocumentServiceLocationSetting" xml:space="preserve">
     <value>Asiakirja palvelun sijainti päivitetty</value>
   </data>
