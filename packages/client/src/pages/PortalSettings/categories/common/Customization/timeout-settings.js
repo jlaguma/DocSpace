@@ -185,12 +185,12 @@ const TimeoutSettings = (props) => {
           >
             <TextInput
               tabIndex={10}
-              id="textInputContainerPortalRenaming"
+              id="textInputContainerTimerSettings"
               scale={true}
-              value={portalName}
-              onChange={onChangePortalName}
-              isDisabled={isLoadingPortalNameSave}
-              hasError={hasError}
+              value=""
+              onChange={onChangeTextInput}
+              isDisabled={isLoading || !enable}
+              hasError={isError}
               placeholder={`${t("Common:EnterName")}`}
             />
             <div className="errorText">{errorValue}</div>
