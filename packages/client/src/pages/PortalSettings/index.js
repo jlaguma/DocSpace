@@ -43,6 +43,10 @@ const PortalRenaming = lazy(() =>
   import("./categories/common/Customization/portal-renaming")
 );
 
+const TimeoutSettings = lazy(() =>
+  import("./categories/common/Customization/timeout-settings")
+);
+
 const Integration = lazy(() => import("./categories/integration"));
 const Payments = lazy(() => import("./categories/payments"));
 const ThirdParty = lazy(() =>

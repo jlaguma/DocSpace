@@ -2,7 +2,7 @@
   "files.exclude": {
     "**/packages": false,
     "**/.nuget": true,
-    "**/common": true,
+    "**/common": false,
     "**/Data": true,
     "**/i18next": true,
     //"**/node_modules": true,

@@ -37,6 +37,10 @@ const StyledSettingsComponent = styled.div`
     margin-right: 4px;
   }
 
+  .timeout-setting_helpbutton {
+    margin-right: 4px;
+  }
+
   .paid-badge {
     cursor: auto;
   }
