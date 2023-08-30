@@ -193,7 +193,7 @@ const TimeoutSettings = (props) => {
               hasError={isError}
               placeholder={`${t("Common:EnterName")}`}
             />
-            <div className="errorText">{errorValue}</div>
+            {/* <div className="errorText">{errorValue}</div> */}
           </FieldContainer>
           <TextInput
             {...textInputProps}
