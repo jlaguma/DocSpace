@@ -185,6 +185,7 @@
   "ThirdPartyStorageDescription": "Zálohované údaje môžete uložiť na účet tretej strany. Predtým však musíte v časti 'Integrácia' pripojiť príslušnú službu. V opačnom prípade budú nasledujúce nastavenia neaktívne.",
   "ThirdPartyTitleDescription": "Pomocou autorizačných kľúčov môžete k svojmu priestoru pripojiť služby tretích strán. Prihláste sa jednoducho cez Facebook, Google alebo LinkedIn; pridajte Dropbox, OneDrive atď., aby ste mohli pracovať so súbormi, ktoré sú tam uložené z priečinka Dokumenty.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

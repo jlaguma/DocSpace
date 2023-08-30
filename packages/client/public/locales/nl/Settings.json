@@ -186,6 +186,7 @@
   "ThirdPartyStorageDescription": "Back-up kan worden opgeslagen in een opslagruimte van derden. Eerst moet u de overeenkomstige dienst verbinden in het 'Integratie' gedeelte. Anders zijn de volgende instellingen inactief.",
   "ThirdPartyTitleDescription": "Met Autorisatiesleutels kunt u diensten van derden aan uw ruimte koppelen. Meld u gemakkelijk aan met Facebook, Google, of LinkedIn; voeg Dropbox, OneDrive, enz. toe om te werken met bestanden die daar opgeslagen zijn vanuit de Documentenmodule.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

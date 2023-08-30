@@ -194,6 +194,7 @@
   "ThirdPartyStorageDescription": "ການສໍາຮອງຂໍ້ມູນສາມາດຖືກບັນທຶກໄວ້ໃນ ບ່ອນເກັບຂໍ້ມູນ ພາກສ່ວນທີສາມ . ກ່ອນ, ທ່ານຈໍາເປັນຕ້ອງໄດ້ເຊື່ອມຕໍ່ການບໍລິການທີ່ສອດຄ້ອງກັນໃນພາກ 'ການລວມເຂົ້າກັນ'. ຖ້າບໍ່ດັ່ງນັ້ນ , ຕິດຕາມ ການຕັ້ງຄ່າ ຈະ ເປັນ ບໍ່ເຄື່ອນໄຫວ.",
   "ThirdPartyTitleDescription": "ດ້ວຍລະຫັດການອະນຸຍາດ, ທ່ານສາມາດເຊື່ອມຕໍ່ການບໍລິການຂອງພາກສ່ວນອື່ນກັບ portal ຂອງທ່ານ. ທ່ານເຂົ້າສູ່ລະບົບໄດ້ງ່າຍດ້ວຍ Facebook, Google, ຫຼື LinkedIn; ເພີ່ມ Dropbox, OneDrive, ແລະອື່ນໆ. ເພື່ອເຮັດວຽກກັບແຟ້ມທີ່ເກັບໄວ້ຢູ່ໃນໂມດູນເອກະສານ.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

@@ -194,6 +194,7 @@
   "ThirdPartyStorageDescription": "Backup can be saved to a third-party storage. Before, you need to connect the corresponding service in the 'Integration' section. Otherwise, the following settings will be inactive.",
   "ThirdPartyTitleDescription": "With Authorization keys, you can connect third-party services to your space. Sign in easily with Facebook, Google, or LinkedIn. Add Dropbox, OneDrive, and other accounts to work with files stored there.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

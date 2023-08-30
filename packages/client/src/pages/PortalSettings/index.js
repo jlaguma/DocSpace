@@ -133,6 +133,11 @@ const PORTAL_RENAMING = combineUrl(
   PROXY_BASE_URL,
   "/customization/general/portal-renaming"
 );
+
+const TIMEOUT_SETTINGS = combineUrl(
+  PROXY_BASE_URL,
+  "/customization/general/timeout-settings"
+);
 const TEAM_TEMPLATE_URL = combineUrl(
   PROXY_BASE_URL,
   "/customization/general/team-template"
@@ -219,6 +224,7 @@ const Settings = () => {
           />
           <Route exact path={DNS_SETTINGS} component={DNSSettings} />
           <Route exact path={PORTAL_RENAMING} component={PortalRenaming} />
+          <Route exact path={TIMEOUT_SETTINGS} component={TimeoutSettings} />
           <Route exact path={WHITELABEL_URL} component={WhiteLabel} />
           <Route exact path={SECURITY_URLS} component={SecuritySettings} />
           <Route exact path={TFA_PAGE_URL} component={TfaPage} />

@@ -191,6 +191,7 @@
   "ThirdPartyStorageDescription": "La sauvegarde peut être enregistrée sur un stockage tiers. Auparavant, il faut vous connecter le service correspondant dans la section 'Intégration'. Sinon, les paramètres suivants seront désactivés.",
   "ThirdPartyTitleDescription": "Avec les clés d'autorisation, vous pouvez connecter des services tiers à votre espace. Connectez vous facilement à Facebook, Google ou LinkedIn; travaillez avec des fichiers stockés sur Dropbox, Onedrive etc. depuis le module Documents.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

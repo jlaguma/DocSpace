@@ -185,6 +185,7 @@
   "ThirdPartyStorageDescription": "Резервну копію можна зберегти в сторонньому сховищі. Перед цим потрібно підключити відповідну службу в розділі «Інтеграція». У іншому випадку зазначені налаштування будуть неактивними.",
   "ThirdPartyTitleDescription": "За допомогою ключів авторизації ви можете підключати сторонні служби до свого порталу. Зручно виконуйте вхід за допомогою Facebook, Google або LinkedIn. Додайте Dropbox, OneDrive тощо, щоб працювати із збереженими там файлами з модуля документів.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

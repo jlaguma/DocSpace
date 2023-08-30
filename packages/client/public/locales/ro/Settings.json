@@ -186,6 +186,7 @@
   "ThirdPartyStorageDescription": "Puteți salva copia de rezervă prin intermediu contului de stocare de la terți. Mai întâi, trebuie să vă conectați cu acest cont de stocare în secțiunea Integrare.  În caz contrar, următoarele setări vor fi inactive.",
   "ThirdPartyTitleDescription": "Folosiți chei de autentificare pentru a vă conecta servicii terță parte la spațiul dvs. Vă conectați cu contul dvs Facebook, Google, sau LinkedIn; adăugați Dropbox, OneDrive, etc. pentru prelucrarea documentelor din stocarea direct în modulul Documente.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

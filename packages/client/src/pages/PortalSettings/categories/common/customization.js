@@ -7,6 +7,7 @@ import LanguageAndTimeZone from "./Customization/language-and-time-zone";
 import WelcomePageSettings from "./Customization/welcome-page-settings";
 import PortalRenaming from "./Customization/portal-renaming";
 import DNSSettings from "./Customization/dns-settings";
+import TimeoutSettings from "./Customization/timeout-settings";
 import CustomizationNavbar from "./customization-navbar";
 import { Base } from "@docspace/components/themes";
 import { setDocumentTitle } from "SRC_DIR/helpers/utils";
@@ -103,6 +104,8 @@ const Customization = (props) => {
       <DNSSettings isMobileView={viewMobile} />
       <StyledSettingsSeparator />
       <PortalRenaming isMobileView={viewMobile} />
+      <StyledSettingsSeparator />
+      <TimeoutSettings isMobileView={viewMobile} />
     </StyledComponent>
   );
 };

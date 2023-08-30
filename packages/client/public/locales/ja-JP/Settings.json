@@ -190,6 +190,7 @@
   "ThirdPartyStorageDescription": "バックアップはサードパーティストレージに保存することができます。事前に、「統合」セクションで対応するサービスを接続する必要があります。そうでない場合は、以下の設定は無効となります。",
   "ThirdPartyTitleDescription": "認証キーを使って、サードパーティのサービスをスペースに接続することができます。Facebook、Google、LinkedInで簡単にサインインしたり、DropboxやOneDriveなどを追加して、Documentsモジュールから保存されたファイルを扱うことができます。",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

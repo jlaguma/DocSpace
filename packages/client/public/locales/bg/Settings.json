@@ -185,6 +185,7 @@
   "ThirdPartyStorageDescription": "Архивното копие може да бъде запазено в хранилище на трета страна. Преди това трябва да свържете съответната услуга в секцията 'Интеграция'. В противен случай следните настройки ще бъдат неактивни.",
   "ThirdPartyTitleDescription": "С Ключовете за удостоверяване можете да свържете услуги от трето лице към пространството си Влезте лесно с Facebook, Google или LinkedIn; добавете Dropbox, OneDrive и др., за да работите със съхранявани там файлове от Модула за документи.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

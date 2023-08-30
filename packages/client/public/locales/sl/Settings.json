@@ -194,6 +194,7 @@
   "ThirdPartyStorageDescription": "Varnostno kopijo lahko shranite pri zunanjem ponudniku. Pred tem morate v razdelku «Integracija» povezati ustrezno storitev. V nasprotnem primeru bodo naslednje nastavitve neaktivne.",
   "ThirdPartyTitleDescription": "S ključi za avtorizacijo lahko v svoj prostor povežete storitve tretjih oseb. Enostavno se prijavite s Facebook, Google ali LinkedIn; dodajte Dropbox, OneDrive itd. za delo z datotekami, shranjenimi v modulu Dokumenti.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

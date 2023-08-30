@@ -186,6 +186,7 @@
   "ThirdPartyStorageDescription": "Το αντίγραφο ασφαλείας μπορεί να αποθηκευτεί σε αποθηκευτικό χώρο τρίτου μέρους. Πριν από αυτό, πρέπει να συνδέσετε την αντίστοιχη υπηρεσία στην ενότητα 'Ενοποίηση'. Διαφορετικά, οι παρακάτω ρυθμίσεις θα είναι ανενεργές.",
   "ThirdPartyTitleDescription": "Με τα κλειδιά εξουσιοδότησης, μπορείτε να συνδέσετε υπηρεσίες τρίτων μερών στην DocSpace σας. Συνδεθείτε εύκολα με το Facebook, το Google ή το LinkedIn, προσθέστε το Dropbox, το OneDrive κ.λπ. για να εργάζεστε με αρχεία που είναι αποθηκευμένα εκεί από την ενότητα Έγγραφα.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

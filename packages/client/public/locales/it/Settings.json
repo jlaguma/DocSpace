@@ -187,6 +187,7 @@
   "ThirdPartyStorageDescription": "Il backup può essere salvato su un archivio di terze parti. Prima, è necessario connettere il servizio corrispondente nella sezione 'Integrazione'. In caso contrario, le seguenti impostazioni non saranno attive.",
   "ThirdPartyTitleDescription": "Con le chiavi di autorizzazione puoi connettere dei servizi di terze parti al tuo spazio. Puoi accedere facilmente tramite: Facebook, Google, LinkedIn; oppure puoi aggiungere l'utilizzo di Dropbox, OneDrive, ecc., per lavorare con i file archiviati con l'uso del modulo Documenti.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",

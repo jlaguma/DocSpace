@@ -186,6 +186,7 @@
   "ThirdPartyStorageDescription": "Ehtiyat nüsxələr üçüncü tərəf yaddaşlarında da saxlana bilər. Bunu etmək üçün əvvəlcə 'İnteqrasiya' bölməsində müvafiq xidmətə qoşulmalısınız. Əks halda, aşağıdakı ayarlar aktivləşdirilməyəcək.",
   "ThirdPartyTitleDescription": "Avtorizasiya açarları ilə öz sahənizə üçüncü tərəf xidmətlərini əlaqələndirə bilərsiniz. Facebook, Google və ya LinkedIn ilə asanlıqla giriş edin; Dropbox, OneDrive əlavə edərək Sənədlər modulundan olan fayllar üzərində oradan işləyin.",
   "TimeoutSettings": "Timeout settings",
+  "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
   "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
