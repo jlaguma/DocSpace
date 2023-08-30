@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Preparing file for encryption",
   "EncryptionKeysReload": "Encryption keys must be re-entered",
   "EnterName": "Enter name",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Error",
   "ErrorInternalServer": "Internal server error. Try again later.",
   "ErrorReport": "Error report",

@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Προετοιμασία αρχείου για κρυπτογράφηση",
   "EncryptionKeysReload": "Τα κλειδιά κρυπτογράφησης πρέπει να εισαχθούν εκ νέου",
   "EnterName": "Εισαγωγή ονόματος",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Σφάλμα",
   "ErrorInternalServer": "Σφάλμα εσωτερικού διακομιστή. Δοκιμάστε ξανά αργότερα.",
   "ErrorReport": "Αναφορά σφάλματος",

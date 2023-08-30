@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "准备加密文件",
   "EncryptionKeysReload": "必须重新输入加密密钥",
   "EnterName": "输入名称",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "错误",
   "ErrorInternalServer": "内部服务器错误。稍后再试。",
   "ErrorReport": "错误报告",

@@ -169,23 +169,10 @@ export const PortalRenamingTooltip = ({ t, domain }) => {
   );
 };
 
-export const TimeoutSettingsTooltip = ({ t, helpLink }) => {
+export const TimeoutSettingsTooltip = ({ t }) => {
   return (
     <StyledTooltip>
-      <div className="font-size">
-        {t("TimeoutSettingsTooltip")}
-        <Link
-          color="#333333"
-          className="display-block"
-          fontSize="13px"
-          isBold
-          isHovered
-          target="_blank"
-          href={`${helpLink}/administration/docspace-settings.aspx#alternativeurl`}
-        >
-          {t("Common:LearnMore")}
-        </Link>
-      </div>
+      <div className="font-size">{t("TimeoutSettingsTooltip")}</div>
     </StyledTooltip>
   );
 };

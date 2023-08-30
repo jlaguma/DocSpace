@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Подготвяне на файла за криптиране",
   "EncryptionKeysReload": "Криптиращите ключове трябва да се въведат отново",
   "EnterName": "Въведи име",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Грешка",
   "ErrorInternalServer": "Вътрешна грешка на сървъра. Опитайте отново по-късно.",
   "ErrorReport": "Доклад за грешки",

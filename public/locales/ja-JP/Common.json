@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "暗号化するファイルの準備",
   "EncryptionKeysReload": "暗号化キーの再入力が必要",
   "EnterName": "名前を入力してください",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "エラー",
   "ErrorInternalServer": "内部サーバーエラーです。後でもう一度お試しください。",
   "ErrorReport": "エラーレポート",

@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Bestand klaarmaken voor versleuteling",
   "EncryptionKeysReload": "Encryptiesleutels moeten opnieuw worden ingevoerd",
   "EnterName": "Voer naam in",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Fout",
   "ErrorInternalServer": "Interne serverfout. Probeer het later opnieuw.",
   "ErrorReport": "Foutverslag",

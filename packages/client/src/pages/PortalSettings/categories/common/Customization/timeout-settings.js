@@ -158,11 +158,7 @@ const TimeoutSettings = (props) => {
   }, [isSmallTablet, setIsCustomizationView]);
 
   const tooltipTimeoutSettingsTooltip = (
-    <TimeoutSettingsTooltip
-      t={t}
-      currentColorScheme={currentColorScheme}
-      helpLink={helpLink}
-    />
+    <TimeoutSettingsTooltip t={t} currentColorScheme={currentColorScheme} />
   );
 
   const settingsBlock = (
@@ -191,17 +187,10 @@ const TimeoutSettings = (props) => {
               onChange={onChangeTextInput}
               isDisabled={isLoading || !enable}
               hasError={isError}
-              placeholder={`${t("Common:EnterName")}`}
+              placeholder={`${t("Common:EnterTimeout")}`}
             />
             {/* <div className="errorText">{errorValue}</div> */}
           </FieldContainer>
-          <TextInput
-            {...textInputProps}
-            isDisabled={isLoading || !enable}
-            value={dnsName}
-            onChange={onChangeTextInput}
-            hasError={isError}
-          />
         </>
       ) : (
         <>
