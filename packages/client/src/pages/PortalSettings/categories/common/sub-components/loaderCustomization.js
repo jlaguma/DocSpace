@@ -141,6 +141,7 @@ const LoaderCustomization = ({
   portalRenaming,
   welcomePage,
   dnsSettings,
+  timeoutSettings,
 }) => {
   const [isMobileView, setIsMobileView] = useState(false);
   const [isDesktopView, setIsDesktopView] = useState(false);
@@ -178,6 +179,7 @@ const LoaderCustomization = ({
       portalRenaming={portalRenaming}
       welcomePage={welcomePage}
       dnsSettings={dnsSettings}
+      timeoutSettings={timeoutSettings}
       className="category-item-wrapper"
     >
       <Loaders.Rectangle height="22px" className="header" />

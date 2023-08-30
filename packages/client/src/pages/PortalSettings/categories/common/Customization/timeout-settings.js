@@ -26,8 +26,8 @@ const toggleStyle = {
 };
 
 const textInputProps = {
-  id: "textInputContainerDNSSettings",
-  className: "dns-textarea",
+  id: "textInputContainerTimeoutSettings",
+  className: "timeout-textarea",
   scale: true,
   tabIndex: 8,
 };
@@ -45,20 +45,19 @@ const TimeoutSettings = (props) => {
     isMobileView,
     tReady,
     isLoaded,
-    setIsLoadedDNSSettings,
+    setIsLoadedTimeoutSettings,
     isLoadedPage,
-    helpLink,
     initSettings,
     setIsLoaded,
     isSettingPaid,
     currentColorScheme,
     standalone,
-    setIsEnableDNS,
-    setDNSName,
-    saveDNSSettings,
-    dnsName,
+    setIsEnableTimeout,
+    setTimeoutSeconds,
+    saveTimeoutSettings,
+    timeoutSeconds,
     enable,
-    isDefaultDNS,
+    isDefaultTimeout,
   } = props;
   const [hasScroll, setHasScroll] = useState(false);
   const isLoadedSetting = isLoaded && tReady;
@@ -94,7 +93,7 @@ const TimeoutSettings = (props) => {
   }, []);
 
   useEffect(() => {
-    if (isLoadedSetting) setIsLoadedDNSSettings(isLoadedSetting);
+    if (isLoadedSetting) setIsLoadedTimeoutSettings(isLoadedSetting);
   }, [isLoadedSetting]);
 
   const onSendRequest = () => {
@@ -103,7 +102,7 @@ const TimeoutSettings = (props) => {
 
   const onSaveSettings = async () => {
     try {
-      if (!dnsName?.trim()) {
+      if (!timeoutSeconds?.trim()) {
         setIsError(true);
         return;
       }
@@ -112,7 +111,7 @@ const TimeoutSettings = (props) => {
         setIsLoading(true);
       }, [200]);
 
-      await saveDNSSettings();
+      await saveTimeoutSettings();
       toastr.success(t("Settings:SuccessfullySaveSettingsMessage"));
     } catch (e) {
       toastr.error(e);
@@ -127,12 +126,12 @@ const TimeoutSettings = (props) => {
 
   const onClickToggle = (e) => {
     const checked = e.currentTarget.checked;
-    setIsEnableDNS(checked);
+    setIsEnableTimeout(checked);
   };
 
   const onChangeTextInput = (e) => {
     const { value } = e.target;
-    setDNSName(value);
+    setTimeoutSeconds(value);
   };
   const checkInnerWidth = useCallback(() => {
     if (!isSmallTablet()) {
@@ -166,8 +165,8 @@ const TimeoutSettings = (props) => {
       {standalone ? (
         <>
           <ToggleButton
-            className="settings-dns_toggle-button"
-            label={t("CustomDomainName")}
+            className="settings-timeout_toggle-button"
+            label={t("TimeoutSettingsToggle")}
             onChange={onClickToggle}
             isChecked={enable ?? false}
             style={toggleStyle}
@@ -219,7 +218,7 @@ const TimeoutSettings = (props) => {
       {...buttonProps}
       label={t("Common:SaveButton")}
       onClick={onSaveSettings}
-      isDisabled={isLoading || isDefaultDNS}
+      isDisabled={isLoading || isDefaultTimeout}
       isLoading={isLoading}
     />
   ) : (
@@ -232,7 +231,7 @@ const TimeoutSettings = (props) => {
   );
 
   return !isLoadedPage ? (
-    <LoaderCustomization dnsSettings={true} />
+    <LoaderCustomization timeoutSettings={true} />
   ) : (
     <StyledSettingsComponent
       hasScroll={hasScroll}
@@ -271,38 +270,37 @@ const TimeoutSettings = (props) => {
 };
 
 export default inject(({ auth, common }) => {
-  const { helpLink, currentColorScheme, standalone } = auth.settingsStore;
+  const { currentColorScheme, standalone } = auth.settingsStore;
   const {
     isLoaded,
-    setIsLoadedDNSSettings,
+    setIsLoadedTimeoutSettings,
     initSettings,
     setIsLoaded,
-    dnsSettings,
-    setIsEnableDNS,
-    setDNSName,
-    saveDNSSettings,
-    isDefaultDNS,
+    timeoutSettings,
+    setIsEnableTimeout,
+    setTimeoutSeconds,
+    saveTimeoutSettings,
+    isDefaultTimeout,
   } = common;
   const { currentQuotaStore } = auth;
   const { isBrandingAndCustomizationAvailable } = currentQuotaStore;
-  const { customObj } = dnsSettings;
-  const { dnsName, enable } = customObj;
+  const { customObj } = timeoutSettings;
+  const { timeoutSeconds, enable } = customObj;
 
   return {
-    isDefaultDNS,
-    dnsName,
+    isDefaultTimeout,
+    timeoutSeconds,
     enable,
-    setDNSName,
+    setTimeoutSeconds,
     isLoaded,
-    setIsLoadedDNSSettings,
-    helpLink,
+    setIsLoadedTimeoutSettings,
     initSettings,
     setIsLoaded,
     isSettingPaid: isBrandingAndCustomizationAvailable,
     currentColorScheme,
     standalone,
-    setIsEnableDNS,
-    saveDNSSettings,
+    setIsEnableTimeout,
+    saveTimeoutSettings,
   };
 })(
   withLoading(

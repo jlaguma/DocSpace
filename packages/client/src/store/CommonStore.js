@@ -2,12 +2,17 @@ import { makeAutoObservable, runInAction } from "mobx";
 import authStore from "@docspace/common/store/AuthStore";
 import api from "@docspace/common/api";
 import { setDNSSettings } from "@docspace/common/api/settings";
+import { setTimeoutSettings } from "@docspace/common/api/settings";
 import toastr from "@docspace/components/toast/toastr";
 
 class CommonStore {
   whiteLabelLogoUrls = [];
   whiteLabelLogoText = null;
   dnsSettings = {
+    defaultObj: {},
+    customObj: {},
+  };
+  timeoutSettings = {
     defaultObj: {},
     customObj: {},
   };
@@ -19,6 +24,7 @@ class CommonStore {
   isLoadedSubmenu = false;
   isLoadedLngTZSettings = false;
   isLoadedDNSSettings = false;
+  isLoadedTimeoutSettings = false;
   isLoadedPortalRenaming = false;
   isLoadedCustomization = false;
   isLoadedCustomizationNavbar = false;
@@ -82,16 +88,34 @@ class CommonStore {
       defaultObj.enable === customObj.enable
     );
   }
+  get isDefaultTimeout() {
+    const { customObj, defaultObj } = this.timeoutSettings;
+    return (
+      defaultObj.timeoutSeconds === customObj.timeoutSeconds &&
+      defaultObj.enable === customObj.enable
+    );
+  }
   setIsEnableDNS = (value) => {
     this.dnsSettings.customObj.enable = value;
+  };
+  setIsEnableTimeout = (value) => {
+    this.timeoutSettings.customObj.enable = value;
   };
 
   setDNSName = (value) => {
     this.dnsSettings.customObj.dnsName = value;
   };
 
+  setTimeoutSeconds = (value) => {
+    this.timeoutSettings.customObj.timeoutSeconds = value;
+  };
+
   setDNSSettings = (data) => {
     this.dnsSettings = { defaultObj: data, customObj: data };
+  };
+
+  setTimeoutSettings = (data) => {
+    this.timeoutSettings = { defaultObj: data, customObj: data };
   };
 
   getMappedDomain = async () => {
@@ -122,6 +146,18 @@ class CommonStore {
     } catch (e) {
       toastr.error(e);
     }
+  };
+  saveTimeoutSettings = async () => {
+    const { customObj } = this.timeoutSettings;
+    const { timeoutSeconds, enable } = customObj;
+
+    await setTimeoutSettings(timeoutSeconds, enable);
+
+    // try {
+    //   this.getMappedDomain();
+    // } catch (e) {
+    //   toastr.error(e);
+    // }
   };
 
   getDNSSettings = async () => {
@@ -165,6 +201,10 @@ class CommonStore {
 
   setIsLoadedDNSSettings = (isLoadedDNSSettings) => {
     this.isLoadedDNSSettings = isLoadedDNSSettings;
+  };
+
+  setIsLoadedTimeoutSettings = (isLoadedTimeoutSettings) => {
+    this.isLoadedTimeoutSettings = isLoadedTimeoutSettings;
   };
 
   setIsLoadedCustomization = (isLoadedCustomization) => {

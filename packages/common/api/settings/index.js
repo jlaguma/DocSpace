@@ -63,6 +63,14 @@ export function setDNSSettings(dnsName, enable) {
   });
 }
 
+export function setTimeoutSettings(timeoutSeconds, enable) {
+  return request({
+    method: "put",
+    url: "/settings/timeout",
+    data: { timeoutSeconds, enable },
+  });
+}
+
 export function getIpRestrictions() {
   return request({
     method: "get",
