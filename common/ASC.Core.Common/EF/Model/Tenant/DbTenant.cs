@@ -32,7 +32,7 @@ public class DbTenant : IMapFrom<Tenant>
     public string Name { get; set; }
     public string Alias { get; set; }
     public string MappedDomain { get; set; }
-    public int FileTimeoutSeconds { get; set; }
+    public string FileTimeoutSeconds { get; set; }
     public int Version { get; set; }
     public DateTime? Version_Changed { get; set; }
     public DateTime VersionChanged
