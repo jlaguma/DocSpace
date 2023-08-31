@@ -199,7 +199,7 @@ public enum MessageAction
     RoomArchived = 5072,
     RoomUnarchived = 5073,
     RoomDeleted = 5074,
-    
+
     RoomUpdateAccessForUser = 5075,
     RoomRemoveUser = 5084,
     RoomCreateUser = 5085,// last
@@ -274,6 +274,8 @@ public enum MessageAction
     TwoFactorAuthenticationDisabled = 6036,
     TwoFactorAuthenticationEnabledBySms = 6037,
     TwoFactorAuthenticationEnabledByTfaApp = 6038,
+
+    TimeoutSettingsUpdated = 6039,
 
     DocumentServiceLocationSetting = 5037,
     AuthorizationKeysSetting = 5038,

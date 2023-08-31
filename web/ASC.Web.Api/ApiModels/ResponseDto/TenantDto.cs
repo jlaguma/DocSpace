@@ -39,6 +39,7 @@ public class TenantDto : IMapFrom<Tenant>
     public string Language { get; set; }
     public DateTime LastModified { get; set; }
     public string MappedDomain { get; set; }
+    public string FileTimeoutSeconds { get; set; }
     public string Name { get; set; }
     public Guid OwnerId { get; set; }
     public string PaymentId { get; set; }

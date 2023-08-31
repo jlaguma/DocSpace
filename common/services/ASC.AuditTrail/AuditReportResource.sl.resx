@@ -112,6 +112,9 @@
   <data name="DnsSettingsUpdated" xml:space="preserve">
     <value>DNS nastavitve posodobljene</value>
   </data>
+  <data name="TimeoutSettingsUpdated" xml:space="preserve">
+    <value>Timeout Settings Updated</value>
+  </data>
   <data name="DocumentsOverwritingSettingsUpdated" xml:space="preserve">
     <value>Nastavitve prepisovanja posodobljene</value>
   </data>
