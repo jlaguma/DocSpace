@@ -182,7 +182,7 @@ const TimeoutSettings = (props) => {
               tabIndex={10}
               id="textInputContainerTimerSettings"
               scale={true}
-              value=""
+              value={timeoutSeconds}
               onChange={onChangeTextInput}
               isDisabled={isLoading || !enable}
               hasError={isError}
