@@ -220,9 +220,9 @@ public class DbTenantService : ITenantService
                 var dbTenant = _mapper.Map<Tenant, DbTenant>(tenant);
                 dbTenant.Id = 0;
                 dbTenant = tenantDbContext.Tenants.Add(dbTenant).Entity;
-                
+
                 await tenantDbContext.SaveChangesAsync();
-                
+
                 tenant.Id = dbTenant.Id;
             }
             else
@@ -236,6 +236,7 @@ public class DbTenantService : ITenantService
                     dbTenant.Alias = tenant.Alias.ToLowerInvariant();
                     dbTenant.MappedDomain = !string.IsNullOrEmpty(tenant.MappedDomain) ? tenant.MappedDomain.ToLowerInvariant() : null;
                     dbTenant.Version = tenant.Version;
+                    dbTenant.FileTimeoutSeconds = tenant.FileTimeoutSeconds;
                     dbTenant.VersionChanged = tenant.VersionChanged;
                     dbTenant.Name = tenant.Name ?? "";
                     dbTenant.Language = tenant.Language;
@@ -299,7 +300,7 @@ public class DbTenantService : ITenantService
 
             await tx.CommitAsync();
         }).GetAwaiter()
-          .GetResult(); 
+          .GetResult();
     }
 
     public IEnumerable<TenantVersion> GetTenantVersions()
@@ -358,7 +359,7 @@ public class DbTenantService : ITenantService
             }
 
             await tenantDbContext.SaveChangesAsync();
-           
+
             await tx.CommitAsync();
         }).GetAwaiter()
           .GetResult();

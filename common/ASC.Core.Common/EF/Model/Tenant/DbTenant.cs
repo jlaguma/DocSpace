@@ -32,6 +32,7 @@ public class DbTenant : IMapFrom<Tenant>
     public string Name { get; set; }
     public string Alias { get; set; }
     public string MappedDomain { get; set; }
+    public int FileTimeoutSeconds { get; set; }
     public int Version { get; set; }
     public DateTime? Version_Changed { get; set; }
     public DateTime VersionChanged
@@ -70,6 +71,7 @@ public class DbTenant : IMapFrom<Tenant>
             .ForMember(dest => dest.Alias, opt => opt.MapFrom(dest => dest.Alias.ToLowerInvariant()))
             .ForMember(dest => dest.LastModified, opt => opt.MapFrom(dest => DateTime.UtcNow))
             .ForMember(dest => dest.Name, opt => opt.MapFrom(dest => dest.Name ?? ""))
+            .ForMember(dest => dest.FileTimeoutSeconds, opt => opt.MapFrom(dest => dest.FileTimeoutSeconds ?? 0))
             .ForMember(dest => dest.MappedDomain, opt => opt.MapFrom(dest =>
                 !string.IsNullOrEmpty(dest.MappedDomain) ? dest.MappedDomain.ToLowerInvariant() : null));
     }
@@ -167,6 +169,13 @@ public static class DbTenantExtension
                 .IsRequired()
                 .HasColumnName("name")
                 .HasColumnType("varchar(255)")
+                .HasCharSet("utf8")
+                .UseCollation("utf8_general_ci");
+
+            entity.Property(e => e.FileTimeoutSeconds)
+                .HasColumnName("file_timeout_seconds")
+                .HasColumnType("varchar(38)")
+                .IsRequired(false)
                 .HasCharSet("utf8")
                 .UseCollation("utf8_general_ci");
 
@@ -280,6 +289,11 @@ public static class DbTenantExtension
                 .IsRequired()
                 .HasColumnName("name")
                 .HasMaxLength(255);
+
+            entity.Property(e => e.FileTimeoutSeconds)
+                .HasColumnName("file_timeout_seconds")
+                .HasMaxLength(38)
+                .HasDefaultValueSql("NULL");
 
             entity.Property(e => e.OwnerId)
                 .HasColumnName("owner_id")

@@ -79,6 +79,12 @@ namespace ASC.Migrations.PostgreSql.Migrations
                         .HasColumnType("character varying(255)")
                         .HasColumnName("name");
 
+                    b.Property<string>("FileTimeoutSeconds")
+                        .HasColumnType("varchar(38)")
+                        .HasColumnName("file_timeout_seconds")
+                        .UseCollation("utf8_general_ci")
+                        .HasAnnotation("MySql:CharSet", "utf8");
+
                     b.Property<Guid?>("OwnerId")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(38)
