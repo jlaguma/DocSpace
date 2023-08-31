@@ -43,7 +43,7 @@ public class TimeoutSettings
         _messageService = messageService;
     }
 
-    public string SaveTimeoutSettings(int timeoutSeconds, bool enableTimeout)
+    public string SaveTimeoutSettings(string timeoutSeconds, bool enableTimeout)
     {
         try
         {
