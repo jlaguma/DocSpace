@@ -154,7 +154,7 @@ public class SettingsController : BaseSettingsController
             TenantAlias = Tenant.Alias,
             EnableAdmMess = studioAdminMessageSettings.Enable || _tenantExtra.IsNotPaid(),
             LegalTerms = _setupInfo.LegalTerms,
-            CookieSettingsEnabled = tenantCookieSettings.Enabled,
+            CookieSettingsEnabled = tenantCookieSettings.Enabled,timeout
             FileTimeoutSeconds = Tenant.FileTimeoutSeconds,
             FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled,
         };
@@ -349,7 +349,7 @@ public class SettingsController : BaseSettingsController
     [HttpGet("timeout")]
     public string TimeoutSettings()
     {
-        return _timeoutSettings.GetTimeoutSettings();
+        return "112233"; //_timeoutSettings.GetTimeoutSettings();
     }
 
     [HttpGet("recalculatequota")]
