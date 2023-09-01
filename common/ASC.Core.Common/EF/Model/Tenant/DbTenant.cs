@@ -93,7 +93,8 @@ public static class DbTenantExtension
                 CreationDateTime = new DateTime(2021, 3, 9, 17, 46, 59, 97, DateTimeKind.Utc).AddTicks(4317),
                 OwnerId = Guid.Parse("66faa6e4-f133-11ea-b126-00ffeec8b4ef"),
                 LastModified = new DateTime(2022, 7, 8),
-                //FileTimeoutSeconds = {timeoutSeconds: 0, enabled: false},
+                FileTimeoutSeconds = "0",
+                FileTimeoutSecondsEnabled = "0"
             }
             );
 
@@ -176,6 +177,13 @@ public static class DbTenantExtension
             entity.Property(e => e.FileTimeoutSeconds)
                 .HasColumnName("file_timeout_seconds")
                 .HasColumnType("varchar(38)")
+                .IsRequired(false)
+                .HasCharSet("utf8")
+                .UseCollation("utf8_general_ci");
+
+            entity.Property(e => e.FileTimeoutSecondsEnabled)
+                .HasColumnName("file_timeout_seconds_enabled")
+                .HasColumnType("varchar(1)")
                 .IsRequired(false)
                 .HasCharSet("utf8")
                 .UseCollation("utf8_general_ci");
@@ -293,6 +301,11 @@ public static class DbTenantExtension
 
             entity.Property(e => e.FileTimeoutSeconds)
                 .HasColumnName("file_timeout_seconds")
+                .HasMaxLength(38)
+                .HasDefaultValueSql("NULL");
+
+            entity.Property(e => e.FileTimeoutSecondsEnabled)
+                .HasColumnName("file_timeout_seconds_enabled")
                 .HasMaxLength(38)
                 .HasDefaultValueSql("NULL");
 
