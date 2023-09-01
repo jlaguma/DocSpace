@@ -76,7 +76,7 @@ export function getTimeoutSettings() {
   console.log("XXX getTimeoutSettings()");
   return request({
     method: "put",
-    url: "/settings/timeout",
+    url: "/settings/gettimeout",
   });
 }
 

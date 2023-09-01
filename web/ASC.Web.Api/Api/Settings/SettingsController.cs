@@ -346,7 +346,7 @@ public class SettingsController : BaseSettingsController
         return _timeoutSettings.SaveTimeoutSettings(model.TimeoutSeconds, model.Enable);
     }
 
-    [HttpGet("timeout")]
+    [HttpGet("gettimeout")]
     public string TimeoutSettings()
     {
         return "112233"; //_timeoutSettings.GetTimeoutSettings();
