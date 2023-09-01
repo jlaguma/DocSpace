@@ -168,7 +168,8 @@ public class SettingsController : BaseSettingsController
             settings.UtcOffset = _timeZoneConverter.GetTimeZone(timeZone).GetUtcOffset(DateTime.UtcNow);
             settings.UtcHoursOffset = settings.UtcOffset.TotalHours;
             settings.OwnerId = Tenant.OwnerId;
-            settings.TimeoutSettings = Tenant.FileTimeoutSecond;
+            settings.FileTimeoutSeconds = Tenant.FileTimeoutSeconds;
+            settings.FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled;
             settings.NameSchemaId = _customNamingPeople.Current.Id;
             settings.SocketUrl = _configuration["web:hub:url"] ?? "";
             settings.DomainValidator = _tenantDomainValidator;
