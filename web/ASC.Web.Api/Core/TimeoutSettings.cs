@@ -44,9 +44,9 @@ public class TimeoutSettings
     }
 
 
-    public string GetTimeoutSettings()
+    public var GetTimeoutSettings()
     {
-        var tenant = _tenantManager.GetCurrentTenant();
+        var tenant = _tenantManager.GetCurrentTenant().FileTimeoutSeconds;
         return tenant;
     }
 
