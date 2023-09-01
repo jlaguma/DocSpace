@@ -74,7 +74,8 @@ public class SettingsDto
             UtcHoursOffset = -8.5,
             UtcOffset = TimeSpan.FromHours(-8.5),
             GreetingSettings = "Web Office Applications",
-            OwnerId = new Guid()
+            OwnerId = new Guid(),
+            TimeoutSettings = {timeoutSeconds: 0, enabled: false},
         };
     }
 }

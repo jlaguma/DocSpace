@@ -47,6 +47,7 @@ public class Tenant : IMapFrom<DbTenant>
         StatusChangeDate = DateTime.UtcNow;
         VersionChanged = DateTime.UtcNow;
         Industry = TenantIndustry.Other;
+        FileTimeoutSeconds = {timeoutSeconds: 0, enabled: false};
     }
 
     public Tenant(string alias)

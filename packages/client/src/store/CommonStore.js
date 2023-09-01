@@ -52,7 +52,8 @@ class CommonStore {
       settingsStore.getPortalCultures(),
       this.getWhiteLabelLogoUrls(),
       this.getWhiteLabelLogoText(),
-      this.getGreetingSettingsIsDefault()
+      this.getGreetingSettingsIsDefault(),
+      this.getTimeoutSettings()
     );
 
     if (standalone) {
@@ -173,6 +174,13 @@ class CommonStore {
     const res = await api.settings.getLogoText();
     this.setLogoText(res);
     return res;
+  };
+
+  getTimeoutSettings = async () => {
+    const ts = await api.settings.getTimeoutSettings();
+    console.log("XXX TIMEOUT SETTINGS =", ts);
+    this.setTimeoutSettings(res);
+    return ts;
   };
 
   setIsLoadedArticleBody = (isLoadedArticleBody) => {

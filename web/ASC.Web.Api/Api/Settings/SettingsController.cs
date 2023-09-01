@@ -154,7 +154,8 @@ public class SettingsController : BaseSettingsController
             TenantAlias = Tenant.Alias,
             EnableAdmMess = studioAdminMessageSettings.Enable || _tenantExtra.IsNotPaid(),
             LegalTerms = _setupInfo.LegalTerms,
-            CookieSettingsEnabled = tenantCookieSettings.Enabled
+            CookieSettingsEnabled = tenantCookieSettings.Enabled,
+            TimeoutSettings = Tenant.FileTimeoutSeconds,
         };
 
         if (_authContext.IsAuthenticated)
@@ -166,6 +167,7 @@ public class SettingsController : BaseSettingsController
             settings.UtcOffset = _timeZoneConverter.GetTimeZone(timeZone).GetUtcOffset(DateTime.UtcNow);
             settings.UtcHoursOffset = settings.UtcOffset.TotalHours;
             settings.OwnerId = Tenant.OwnerId;
+            settings.TimeoutSettings = Tenant.FileTimeoutSecond;
             settings.NameSchemaId = _customNamingPeople.Current.Id;
             settings.SocketUrl = _configuration["web:hub:url"] ?? "";
             settings.DomainValidator = _tenantDomainValidator;
@@ -340,6 +342,12 @@ public class SettingsController : BaseSettingsController
     public object SaveTimeoutSettings(TimeoutSettingsRequestsDto model)
     {
         return _timeoutSettings.SaveTimeoutSettings(model.TimeoutSeconds, model.Enable);
+    }
+
+    [HttpGet("timeout")]
+    public TimeoutSettingsRequestsDto TimeoutSettings()
+    {
+        return _timeoutSettings.GetTimeoutSettings();
     }
 
     [HttpGet("recalculatequota")]

@@ -64,11 +64,19 @@ export function setDNSSettings(dnsName, enable) {
 }
 
 export function setTimeoutSettings(timeoutSeconds, enable) {
-  console.log("XXX setTimeoutSettings:", timeoutSeconds, enable);
+  console.log("XXX setTimeoutSettings():", timeoutSeconds, enable);
   return request({
     method: "put",
     url: "/settings/timeout",
     data: { timeoutSeconds, enable },
+  });
+}
+
+export function getTimeoutSettings() {
+  console.log("XXX getTimeoutSettings()");
+  return request({
+    method: "put",
+    url: "/settings/timeout",
   });
 }
 

@@ -43,6 +43,18 @@ public class TimeoutSettings
         _messageService = messageService;
     }
 
+
+    public string GetTimeoutSettings()
+    {
+        var token = GetCurrentToken(userId, tenantId);
+        if (token == null || token.Length == 0)
+        {
+            return string.Empty;
+        }
+
+        return GetLink(token);
+    }
+
     public string SaveTimeoutSettings(string timeoutSeconds, bool enableTimeout)
     {
         try
