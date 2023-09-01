@@ -154,7 +154,7 @@ public class SettingsController : BaseSettingsController
             TenantAlias = Tenant.Alias,
             EnableAdmMess = studioAdminMessageSettings.Enable || _tenantExtra.IsNotPaid(),
             LegalTerms = _setupInfo.LegalTerms,
-            CookieSettingsEnabled = tenantCookieSettings.Enabled,timeout
+            CookieSettingsEnabled = tenantCookieSettings.Enabled,
             FileTimeoutSeconds = Tenant.FileTimeoutSeconds,
             FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled,
         };
