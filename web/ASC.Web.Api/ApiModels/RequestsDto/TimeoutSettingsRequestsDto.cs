@@ -29,5 +29,5 @@ namespace ASC.Web.Api.Models;
 public class TimeoutSettingsRequestsDto
 {
     public string TimeoutSeconds { get; set; }
-    public bool Enable { get; set; }
+    public string Enable { get; set; }
 }

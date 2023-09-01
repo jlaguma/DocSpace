@@ -153,12 +153,6 @@ class CommonStore {
     const { timeoutSeconds, enable } = customObj;
 
     await setTimeoutSettings(timeoutSeconds, enable);
-
-    // try {
-    //   this.getMappedDomain();
-    // } catch (e) {
-    //   toastr.error(e);
-    // }
   };
 
   getDNSSettings = async () => {

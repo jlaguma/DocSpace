@@ -51,7 +51,7 @@ public class TimeoutSettings
         return FileTimeoutSeconds;
     }
 
-    public string SaveTimeoutSettings(string timeoutSeconds, bool enableTimeout)
+    public string SaveTimeoutSettings(string timeoutSeconds, string enableTimeout)
     {
         try
         {
@@ -60,7 +60,7 @@ public class TimeoutSettings
             var tenant = _tenantManager.GetCurrentTenant();
 
             tenant.FileTimeoutSeconds = timeoutSeconds;
-            tenant.FileTimeoutSecondsEnabled = enableTimeout ? "1" : "0";
+            tenant.FileTimeoutSecondsEnabled = enableTimeout;
             _tenantManager.SaveTenant(tenant);
             _messageService.Send(MessageAction.TimeoutSettingsUpdated);
 
