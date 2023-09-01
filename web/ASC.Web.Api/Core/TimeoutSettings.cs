@@ -60,6 +60,9 @@ public class TimeoutSettings
 
             var tenant = _tenantManager.GetCurrentTenant();
 
+            System.Console.WriteLine($"XXX tenant: {tenant}");
+            System.Console.WriteLine($"XXX timeoutSeconds: {timeoutSeconds} enableTimeout: {enableTimeout}");
+
             tenant.FileTimeoutSeconds = timeoutSeconds;
             tenant.FileTimeoutSecondsEnabled = enableTimeout;
             _tenantManager.SaveTenant(tenant);
