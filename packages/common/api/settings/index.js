@@ -75,8 +75,8 @@ export function setTimeoutSettings(timeoutSeconds, enable) {
 export function getTimeoutSettings() {
   console.log("XXX getTimeoutSettings()");
   return request({
-    method: "put",
-    url: "/settings/gettimeout",
+    method: "get",
+    url: "/settings/timeout",
   });
 }
 
