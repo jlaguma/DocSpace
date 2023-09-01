@@ -347,9 +347,9 @@ public class SettingsController : BaseSettingsController
     }
 
     [HttpGet("gettimeout")]
-    public string TimeoutSettings()
+    public string GetTimeoutSettings()
     {
-        return "112233"; //_timeoutSettings.GetTimeoutSettings();
+        return _timeoutSettings.GetTimeoutSettings();
     }
 
     [HttpGet("recalculatequota")]

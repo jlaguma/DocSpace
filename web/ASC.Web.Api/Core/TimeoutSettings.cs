@@ -46,9 +46,10 @@ public class TimeoutSettings
 
     public string GetTimeoutSettings()
     {
-        string FileTimeoutSeconds = _tenantManager.GetCurrentTenant().FileTimeoutSeconds;
-        string FileTimeoutSecondsEnabled = _tenantManager.GetCurrentTenant().FileTimeoutSecondsEnabled;
-        return FileTimeoutSeconds;
+        // string FileTimeoutSeconds = _tenantManager.GetCurrentTenant().FileTimeoutSeconds;
+        // string FileTimeoutSecondsEnabled = _tenantManager.GetCurrentTenant().FileTimeoutSecondsEnabled;
+        // return FileTimeoutSeconds;
+        return "318";
     }
 
     public string SaveTimeoutSettings(string timeoutSeconds, string enableTimeout)
