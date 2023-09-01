@@ -81,6 +81,12 @@ namespace ASC.Migrations.MySql.Migrations.Backups
                         .UseCollation("utf8_general_ci")
                         .HasAnnotation("MySql:CharSet", "utf8");
 
+                    b.Property<string>("FileTimeoutSecondsEnabled")
+                        .HasColumnType("varchar(1)")
+                        .HasColumnName("file_timeout_seconds_enabled")
+                        .UseCollation("utf8_general_ci")
+                        .HasAnnotation("MySql:CharSet", "utf8");
+
                     b.Property<string>("OwnerId")
                         .HasColumnType("varchar(38)")
                         .HasColumnName("owner_id")

@@ -155,7 +155,8 @@ public class SettingsController : BaseSettingsController
             EnableAdmMess = studioAdminMessageSettings.Enable || _tenantExtra.IsNotPaid(),
             LegalTerms = _setupInfo.LegalTerms,
             CookieSettingsEnabled = tenantCookieSettings.Enabled,
-            TimeoutSettings = Tenant.FileTimeoutSeconds,
+            FileTimeoutSeconds = Tenant.FileTimeoutSeconds,
+            FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled,
         };
 
         if (_authContext.IsAuthenticated)
