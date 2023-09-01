@@ -347,7 +347,7 @@ public class SettingsController : BaseSettingsController
     }
 
     [HttpGet("timeout")]
-    public TimeoutSettingsRequestsDto TimeoutSettings()
+    public string TimeoutSettings()
     {
         return _timeoutSettings.GetTimeoutSettings();
     }
