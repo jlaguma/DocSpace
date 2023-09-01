@@ -46,13 +46,8 @@ public class TimeoutSettings
 
     public string GetTimeoutSettings()
     {
-        var token = GetCurrentToken(userId, tenantId);
-        if (token == null || token.Length == 0)
-        {
-            return string.Empty;
-        }
-
-        return GetLink(token);
+        var tenant = _tenantManager.GetCurrentTenant();
+        return tenant;
     }
 
     public string SaveTimeoutSettings(string timeoutSeconds, bool enableTimeout)
