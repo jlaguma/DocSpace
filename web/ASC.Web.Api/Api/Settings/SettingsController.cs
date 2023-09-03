@@ -351,7 +351,7 @@ public class SettingsController : BaseSettingsController
     public TimeoutSettingsRequestsDto GetTimeoutSettings()
     {
         System.Console.WriteLine($"XXX in GetTimeoutSettings()");
-        object xxx = _timeoutSettings.GetTimeoutSettings();
+        TimeoutSettingsRequestsDto xxx = _timeoutSettings.GetTimeoutSettings();
         System.Console.WriteLine($"XXX got {xxx}");
         return xxx;
     }
