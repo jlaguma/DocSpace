@@ -46,10 +46,13 @@ public class TimeoutSettings
 
     public string GetTimeoutSettings()
     {
-        // string FileTimeoutSeconds = _tenantManager.GetCurrentTenant().FileTimeoutSeconds;
-        // string FileTimeoutSecondsEnabled = _tenantManager.GetCurrentTenant().FileTimeoutSecondsEnabled;
+        System.Console.WriteLine("XXX GetTimeoutSettings()");
+        string FileTimeoutSeconds = _tenantManager.GetCurrentTenant().FileTimeoutSeconds;
+        string FileTimeoutSecondsEnabled = _tenantManager.GetCurrentTenant().FileTimeoutSecondsEnabled;
+        System.Console.WriteLine($"XXX FileTimeoutSeconds: {FileTimeoutSeconds} FileTimeoutSecondsEnabled: {FileTimeoutSecondsEnabled}");
+
         // return FileTimeoutSeconds;
-        return "318";
+        return null;
     }
 
     public string SaveTimeoutSettings(string timeoutSeconds, string enableTimeout)
@@ -60,7 +63,6 @@ public class TimeoutSettings
 
             var tenant = _tenantManager.GetCurrentTenant();
 
-            System.Console.WriteLine($"XXX tenant: {tenant}");
             System.Console.WriteLine($"XXX timeoutSeconds: {timeoutSeconds} enableTimeout: {enableTimeout}");
 
             tenant.FileTimeoutSeconds = timeoutSeconds;
