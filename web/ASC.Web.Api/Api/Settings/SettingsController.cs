@@ -157,6 +157,7 @@ public class SettingsController : BaseSettingsController
             CookieSettingsEnabled = tenantCookieSettings.Enabled,
             FileTimeoutSeconds = Tenant.FileTimeoutSeconds,
             FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled,
+            System.Console.WriteLine($"XXX GetSettings() FileTimeoutSeconds: {FileTimeoutSeconds} FileTimeoutSecondsEnabled: {FileTimeoutSecondsEnabled}");
         };
 
         if (_authContext.IsAuthenticated)
