@@ -99,16 +99,17 @@ class CommonStore {
   setIsEnableDNS = (value) => {
     this.dnsSettings.customObj.enable = value;
   };
+
+  setTimeoutSeconds = (value) => {
+    this.timeoutSettings.customObj.timeoutSeconds = value;
+  };
+
   setIsEnableTimeout = (value) => {
     this.timeoutSettings.customObj.enable = value;
   };
 
   setDNSName = (value) => {
     this.dnsSettings.customObj.dnsName = value;
-  };
-
-  setTimeoutSeconds = (value) => {
-    this.timeoutSettings.customObj.timeoutSeconds = value;
   };
 
   setDNSSettings = (data) => {
@@ -171,9 +172,10 @@ class CommonStore {
   };
 
   getTimeoutSettings = async () => {
+    console.log("XXX calling api.settings.getTimeoutSettings()");
     const ts = await api.settings.getTimeoutSettings();
     console.log("XXX TIMEOUT SETTINGS =", ts);
-    this.setTimeoutSettings(res);
+    this.setTimeoutSettings(ts);
     return ts;
   };
 

@@ -348,9 +348,12 @@ public class SettingsController : BaseSettingsController
     }
 
     [HttpGet("timeout")]
-    public string GetTimeoutSettings()
+    public object GetTimeoutSettings()
     {
-        return _timeoutSettings.GetTimeoutSettings();
+        System.Console.WriteLine($"XXX in GetTimeoutSettings()");
+        object xxx = _timeoutSettings.GetTimeoutSettings();
+        System.Console.WriteLine($"XXX got {xxx}");
+        return xxx;
     }
 
     [HttpGet("recalculatequota")]

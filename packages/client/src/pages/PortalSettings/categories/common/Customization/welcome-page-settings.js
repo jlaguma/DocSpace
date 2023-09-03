@@ -50,15 +50,6 @@ class WelcomePageSettings extends React.Component {
         ? greetingSettings
         : greetingTitleDefaultFromSessionStorage;
 
-    console.log(
-      "XXX WelcomePageSettings()",
-      greetingSettings,
-      greetingTitleFromSessionStorage,
-      greetingTitleDefaultFromSessionStorage,
-      greetingTitle,
-      greetingTitleDefault
-    );
-
     this.state = {
       isLoading: false,
       greetingTitle,
