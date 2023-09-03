@@ -44,15 +44,16 @@ public class TimeoutSettings
     }
 
 
-    public string GetTimeoutSettings()
+    public TimeoutSettingsRequestsDto GetTimeoutSettings()
     {
-        System.Console.WriteLine("XXX GetTimeoutSettings()");
         string FileTimeoutSeconds = _tenantManager.GetCurrentTenant().FileTimeoutSeconds;
         string FileTimeoutSecondsEnabled = _tenantManager.GetCurrentTenant().FileTimeoutSecondsEnabled;
         System.Console.WriteLine($"XXX FileTimeoutSeconds: {FileTimeoutSeconds} FileTimeoutSecondsEnabled: {FileTimeoutSecondsEnabled}");
 
-        // return FileTimeoutSeconds;
-        return null;
+        TimeoutSettingsRequestsDto timeout = new TimeoutSettingsRequestsDto();
+        timeout.TimeoutSeconds = FileTimeoutSeconds;
+        timeout.Enable = FileTimeoutSecondsEnabled;
+        return timeout;
     }
 
     public string SaveTimeoutSettings(string timeoutSeconds, string enableTimeout)
