@@ -348,7 +348,7 @@ public class SettingsController : BaseSettingsController
     }
 
     [HttpGet("timeout")]
-    public object GetTimeoutSettings()
+    public TimeoutSettingsRequestsDto GetTimeoutSettings()
     {
         System.Console.WriteLine($"XXX in GetTimeoutSettings()");
         object xxx = _timeoutSettings.GetTimeoutSettings();
