@@ -349,7 +349,7 @@ public class SettingsController : BaseSettingsController
     [HttpGet("timeout")]
     public string GetTimeoutSettings()
     {
-        _timeoutSettings.GetTimeoutSettings();
+        return _timeoutSettings.GetTimeoutSettings();
     }
 
     [HttpGet("recalculatequota")]
