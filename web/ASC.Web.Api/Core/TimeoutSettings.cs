@@ -46,13 +46,12 @@ public class TimeoutSettings
 
     public TimeoutSettingsRequestsDto GetTimeoutSettings()
     {
+        TimeoutSettingsRequestsDto timeout = new TimeoutSettingsRequestsDto();
         string FileTimeoutSeconds = _tenantManager.GetCurrentTenant().FileTimeoutSeconds;
         string FileTimeoutSecondsEnabled = _tenantManager.GetCurrentTenant().FileTimeoutSecondsEnabled;
-        System.Console.WriteLine($"XXX FileTimeoutSeconds: {FileTimeoutSeconds} FileTimeoutSecondsEnabled: {FileTimeoutSecondsEnabled}");
-
-        TimeoutSettingsRequestsDto timeout = new TimeoutSettingsRequestsDto();
         timeout.TimeoutSeconds = FileTimeoutSeconds;
         timeout.Enable = FileTimeoutSecondsEnabled;
+
         return timeout;
     }
 
@@ -63,9 +62,6 @@ public class TimeoutSettings
             _permissionContext.DemandPermissions(SecutiryConstants.EditPortalSettings);
 
             var tenant = _tenantManager.GetCurrentTenant();
-
-            System.Console.WriteLine($"XXX timeoutSeconds: {timeoutSeconds} enableTimeout: {enableTimeout}");
-
             tenant.FileTimeoutSeconds = timeoutSeconds;
             tenant.FileTimeoutSecondsEnabled = enableTimeout;
             _tenantManager.SaveTenant(tenant);

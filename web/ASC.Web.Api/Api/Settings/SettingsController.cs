@@ -158,7 +158,6 @@ public class SettingsController : BaseSettingsController
             FileTimeoutSeconds = Tenant.FileTimeoutSeconds,
             FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled,
         };
-        System.Console.WriteLine($"XXX GetSettings() FileTimeoutSeconds: {Tenant.FileTimeoutSeconds} FileTimeoutSecondsEnabled: {Tenant.FileTimeoutSecondsEnabled}");
 
         if (_authContext.IsAuthenticated)
         {
@@ -350,10 +349,7 @@ public class SettingsController : BaseSettingsController
     [HttpGet("timeout")]
     public TimeoutSettingsRequestsDto GetTimeoutSettings()
     {
-        System.Console.WriteLine($"XXX in GetTimeoutSettings()");
-        TimeoutSettingsRequestsDto xxx = _timeoutSettings.GetTimeoutSettings();
-        System.Console.WriteLine($"XXX got {xxx}");
-        return xxx;
+        return _timeoutSettings.GetTimeoutSettings();
     }
 
     [HttpGet("recalculatequota")]

@@ -172,11 +172,9 @@ class CommonStore {
   };
 
   getTimeoutSettings = async () => {
-    console.log("XXX calling api.settings.getTimeoutSettings()");
-    const ts = await api.settings.getTimeoutSettings();
-    console.log("XXX TIMEOUT SETTINGS =", ts);
-    this.setTimeoutSettings(ts);
-    return ts;
+    const res = await api.settings.getTimeoutSettings();
+    this.setTimeoutSettings(res);
+    return res;
   };
 
   setIsLoadedArticleBody = (isLoadedArticleBody) => {

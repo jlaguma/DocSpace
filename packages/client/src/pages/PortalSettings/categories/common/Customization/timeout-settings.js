@@ -168,7 +168,7 @@ const TimeoutSettings = (props) => {
             className="settings-timeout_toggle-button"
             label={t("TimeoutSettingsToggle")}
             onChange={onClickToggle}
-            isChecked={enable ?? false}
+            isChecked={enable === "1" ? true : false}
             style={toggleStyle}
             isDisabled={isLoading}
           />
