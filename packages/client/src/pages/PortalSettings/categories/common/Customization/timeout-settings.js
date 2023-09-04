@@ -126,7 +126,8 @@ const TimeoutSettings = (props) => {
 
   const onClickToggle = (e) => {
     const checked = e.currentTarget.checked;
-    setIsEnableTimeout(checked);
+
+    setIsEnableTimeout(checked ? "1" : "0");
   };
 
   const onChangeTextInput = (e) => {
