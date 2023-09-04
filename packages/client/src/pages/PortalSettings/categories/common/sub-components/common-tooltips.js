@@ -168,3 +168,11 @@ export const PortalRenamingTooltip = ({ t, domain }) => {
     </StyledTooltip>
   );
 };
+
+export const TimeoutSettingsTooltip = ({ t }) => {
+  return (
+    <StyledTooltip>
+      <div className="font-size">{t("TimeoutSettingsTooltip")}</div>
+    </StyledTooltip>
+  );
+};

@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Fayl şifrələnmə üçün hazırlanır",
   "EncryptionKeysReload": "Şifrələmə düymələri yenidən daxil edilməlidir",
   "EnterName": "Adı daxil edin",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Səhv",
   "ErrorInternalServer": "Daxili server xətası. Daha sonra yenidən cəhd edin.",
   "ErrorReport": "Xəta hesabatı",

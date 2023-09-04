@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Підготовка файлу до шифрування",
   "EncryptionKeysReload": "Потрібно повторно ввести ключі шифрування",
   "EnterName": "Введіть ім'я",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Помилка",
   "ErrorInternalServer": "Внутрішня помилка сервера. Спробуйте ще раз пізніше.",
   "ErrorReport": "Звіт про помилки",

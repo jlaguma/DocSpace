@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "ກຳລັງກຽມໄຟລ໌ສຳລັບການເຂົ້າລະຫັດ",
   "EncryptionKeysReload": "ກະລຸນາໃສ່ລະສັດອີກຄັ້ງເພື່ອຢືນຢັນ",
   "EnterName": "ເຂົ້າ ຊື່",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "ຂໍ້ຜິດພາດ",
   "ErrorInternalServer": "ເຊີບເວີພາຍໃນຜິດພາດ. ລອງໃໝ່ໃນພາຍຫຼັງ.",
   "ErrorReport": "ລາຍງານຄວາມຜິດພາດ",

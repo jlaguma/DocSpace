@@ -57,6 +57,13 @@ export const settingsTree = [
             link: "portal-renaming",
             tKey: "PortalRenaming",
           },
+          {
+            id: "portal-settings_catalog-timeout-settings",
+            key: "0-0-4",
+            icon: "",
+            link: "timeout-settings",
+            tKey: "TimeoutSettings",
+          },
         ],
       },
       {

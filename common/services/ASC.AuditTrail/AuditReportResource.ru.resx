@@ -127,6 +127,9 @@
   <data name="DnsSettingsUpdated" xml:space="preserve">
     <value>Обновлены настройки DNS</value>
   </data>
+  <data name="TimeoutSettingsUpdated" xml:space="preserve">
+    <value>Обновлены настройки тайм-аута</value>
+  </data>
   <data name="DocumentServiceLocationSetting" xml:space="preserve">
     <value>Обновлено местоположение сервиса документов</value>
   </data>

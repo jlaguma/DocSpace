@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Preparazione di file per crittografia",
   "EncryptionKeysReload": "Le chiavi di crittografia devono essere reinserite",
   "EnterName": "Inserisci nome",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Errore",
   "ErrorInternalServer": "Errore interno del server. Riprova più tardi.",
   "ErrorReport": "Rapporto di errore",

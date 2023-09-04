@@ -37,11 +37,22 @@ const StyledSettingsComponent = styled.div`
     margin-right: 4px;
   }
 
+  .timeout-setting_helpbutton {
+    margin-right: 4px;
+  }
+
   .paid-badge {
     cursor: auto;
   }
 
   .dns-textarea {
+    textarea {
+      color: ${(props) => props.theme.text.disableColor};
+    }
+    ${(props) => props.standalone && "margin-top: 14px"};
+  }
+
+  .timeout-textarea {
     textarea {
       color: ${(props) => props.theme.text.disableColor};
     }
@@ -80,6 +91,15 @@ const StyledSettingsComponent = styled.div`
     }
   }
   .settings-dns_toggle-button {
+    .toggle-button-text {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    svg {
+      margin-top: 1px;
+    }
+  }
+  .settings-timeout_toggle-button {
     .toggle-button-text {
       font-weight: 600;
       font-size: 14px;

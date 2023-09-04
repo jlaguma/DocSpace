@@ -10,8 +10,8 @@
 
 namespace ASC.AuditTrail {
     using System;
-    
-    
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -23,15 +23,15 @@ namespace ASC.AuditTrail {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class AuditReportResource {
-        
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal AuditReportResource() {
         }
-        
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -45,7 +45,7 @@ namespace ASC.AuditTrail {
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
@@ -59,7 +59,7 @@ namespace ASC.AuditTrail {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Action.
         /// </summary>
@@ -68,7 +68,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ActionCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Action ID.
         /// </summary>
@@ -77,7 +77,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ActionIdCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Action Type.
         /// </summary>
@@ -86,7 +86,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ActionTypeCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Added tags: [{1}].
         /// </summary>
@@ -95,7 +95,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("AddedRoomTags", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Administrator Added: {0}.
         /// </summary>
@@ -104,7 +104,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("AdministratorAdded", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Administrator Deleted: {0}.
         /// </summary>
@@ -113,7 +113,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("AdministratorDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Administrator Message Settings Updated.
         /// </summary>
@@ -122,7 +122,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("AdministratorMessageSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Administrators [{0}]. Full Access Opened.
         /// </summary>
@@ -131,7 +131,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("AdministratorOpenedFullAccess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Attach.
         /// </summary>
@@ -140,7 +140,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("AttachActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Audit Lifetime Settings Updated.
         /// </summary>
@@ -149,7 +149,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("AuditSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Audit Trail Report Downloaded.
         /// </summary>
@@ -158,7 +158,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("AuditTrailReportDownloaded", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Audit Trail Report ({0}-{1}).
         /// </summary>
@@ -167,7 +167,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("AuditTrailReportName", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Third-party authorization keys updated.
         /// </summary>
@@ -176,7 +176,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("AuthorizationKeysSetting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Browser.
         /// </summary>
@@ -185,7 +185,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("BrowserCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Color Theme Changed.
         /// </summary>
@@ -194,7 +194,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ColorThemeChanged", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Cookie Settings Updated.
         /// </summary>
@@ -203,7 +203,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("CookieSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Copy.
         /// </summary>
@@ -212,7 +212,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("CopyActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
@@ -221,7 +221,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("CreateActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Custom Navigation Settings Updated.
         /// </summary>
@@ -230,7 +230,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("CustomNavigationSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Date.
         /// </summary>
@@ -239,7 +239,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DateCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Default Start Page Settings Updated.
         /// </summary>
@@ -248,7 +248,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DefaultStartPageSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Delete.
         /// </summary>
@@ -257,7 +257,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DeleteActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Deleted tags: [{1}].
         /// </summary>
@@ -266,7 +266,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DeletedRoomTags", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Detach.
         /// </summary>
@@ -275,7 +275,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DetachActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to DNS Settings Updated.
         /// </summary>
@@ -284,7 +284,16 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DnsSettingsUpdated", resourceCulture);
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized string similar to Timeout Settings Updated.
+        /// </summary>
+        public static string TimeoutSettingsUpdated {
+            get {
+                return ResourceManager.GetString("TimeoutSettingsUpdated", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to Document Service Location Updated.
         /// </summary>
@@ -293,7 +302,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DocumentServiceLocationSetting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Forcesave settings Updated.
         /// </summary>
@@ -302,7 +311,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DocumentsForcesave", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Overwriting Settings Updated.
         /// </summary>
@@ -311,7 +320,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DocumentsOverwritingSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Documents.
         /// </summary>
@@ -320,7 +329,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DocumentsProduct", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Settings.
         /// </summary>
@@ -329,7 +338,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DocumentsSettingsModule", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Store forcesave settings Updated.
         /// </summary>
@@ -338,7 +347,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DocumentsStoreForcesave", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Third-Party Settings Updated.
         /// </summary>
@@ -347,7 +356,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DocumentsThirdPartySettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Uploading Formats Settings Updated.
         /// </summary>
@@ -356,7 +365,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DocumentsUploadingFormatsSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Download.
         /// </summary>
@@ -365,7 +374,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("DownloadActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Export.
         /// </summary>
@@ -374,7 +383,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ExportActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Set owner of [{0}] to [{1}].
         /// </summary>
@@ -383,7 +392,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileChangeOwner", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to File Converted to Internal Format: {0}.
         /// </summary>
@@ -392,7 +401,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileConverted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files [{0}]. Copied From Folder &quot;{1}&quot; To Folder: &quot;{2}&quot;.
         /// </summary>
@@ -401,7 +410,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileCopied", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files [{0}]. Copied With Overwriting From Folder &quot;{1}&quot; To Folder: &quot;{2}&quot;.
         /// </summary>
@@ -410,7 +419,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileCopiedWithOverwriting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to File Created: {0}.
         /// </summary>
@@ -419,7 +428,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileCreated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files [{0}]. Revision: {1}. Version Created.
         /// </summary>
@@ -428,7 +437,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileCreatedVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to File Deleted: {0}.
         /// </summary>
@@ -437,7 +446,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files [{0}]. Revision: {1}. Version Deleted.
         /// </summary>
@@ -446,7 +455,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileDeletedVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to File Downloaded: {0}.
         /// </summary>
@@ -455,7 +464,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileDownloaded", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files [{0}]. Downloaded As: {1}.
         /// </summary>
@@ -464,7 +473,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileDownloadedAs", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Folders [{0}]. File Imported: {1}. Provider: {2}.
         /// </summary>
@@ -473,7 +482,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileImported", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to File Locked: {0}.
         /// </summary>
@@ -482,7 +491,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileLocked", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files [{0}]. Moved From Folder &quot;{1}&quot; To Folder: &quot;{2}&quot;.
         /// </summary>
@@ -491,7 +500,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileMoved", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files [{0}]. Moved To Trash Folder.
         /// </summary>
@@ -500,7 +509,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileMovedToTrash", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files [{0}]. Moved With Overwriting From Folder &quot;{1}&quot; To Folder: &quot;{2}&quot;.
         /// </summary>
@@ -509,7 +518,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileMovedWithOverwriting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to File Renamed: {0}.
         /// </summary>
@@ -518,7 +527,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileRenamed", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files [{0}]. Revision: {1}. Version Restored.
         /// </summary>
@@ -527,7 +536,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileRestoreVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Document {1} signed via {0}.
         /// </summary>
@@ -536,7 +545,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FilesDocumentSigned", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Sent shared link to the [{0}] file. Recipients: [{1}].
         /// </summary>
@@ -545,7 +554,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileSendAccessLink", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files.
         /// </summary>
@@ -554,7 +563,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FilesModule", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Document {1} sent to sign via {0}.
         /// </summary>
@@ -563,7 +572,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FilesRequestSign", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to File Unlocked: {0}.
         /// </summary>
@@ -572,7 +581,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileUnlocked", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to File Updated: {0}.
         /// </summary>
@@ -581,7 +590,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files [{0}]. Access Updated.
         /// </summary>
@@ -590,7 +599,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileUpdatedAccess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Files [{0}]. Revision {1}. Comment Updated.
         /// </summary>
@@ -599,7 +608,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileUpdatedRevisionComment", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to File Uploaded: {0}.
         /// </summary>
@@ -608,7 +617,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FileUploaded", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Folders [{0}]. Copied To Folder: {1}.
         /// </summary>
@@ -617,7 +626,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FolderCopied", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Folders [{0}]. Copied With Overwriting To Folder: {1}.
         /// </summary>
@@ -626,7 +635,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FolderCopiedWithOverwriting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Folder Created: {0}.
         /// </summary>
@@ -635,7 +644,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FolderCreated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Folder Deleted: {0}.
         /// </summary>
@@ -644,7 +653,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FolderDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Folders [{0}]. Moved To Folder: {1}.
         /// </summary>
@@ -653,7 +662,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FolderMoved", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Folders [{0}]. Moved To Trash Folder.
         /// </summary>
@@ -662,7 +671,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FolderMovedToTrash", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Folders [{0}]. Moved With Overwriting To Folder: {1}.
         /// </summary>
@@ -671,7 +680,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FolderMovedWithOverwriting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Folder Renamed: {0}.
         /// </summary>
@@ -680,7 +689,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FolderRenamed", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Folders.
         /// </summary>
@@ -689,7 +698,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FoldersModule", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Folders [{0}]. Access Updated.
         /// </summary>
@@ -698,7 +707,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FolderUpdatedAccess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Follow.
         /// </summary>
@@ -707,7 +716,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FollowActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Sphinx settings updated.
         /// </summary>
@@ -716,7 +725,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("FullTextSearchSetting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to General.
         /// </summary>
@@ -725,7 +734,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("GeneralModule", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Welcome Page Settings Updated.
         /// </summary>
@@ -734,7 +743,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("GreetingSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Group Created: {0}.
         /// </summary>
@@ -743,7 +752,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("GroupCreated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Group Deleted: {0}.
         /// </summary>
@@ -752,7 +761,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("GroupDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Groups.
         /// </summary>
@@ -761,7 +770,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("GroupsModule", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Group Updated: {0}.
         /// </summary>
@@ -770,7 +779,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("GroupUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Guest Account.
         /// </summary>
@@ -779,7 +788,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("GuestAccount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Guest Activated: {0}.
         /// </summary>
@@ -788,7 +797,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("GuestActivated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Guest Created: {0}.
         /// </summary>
@@ -797,7 +806,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("GuestCreated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Guest Created Via Invite: {0}.
         /// </summary>
@@ -806,7 +815,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("GuestCreatedViaInvite", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Guest Imported: {0}.
         /// </summary>
@@ -815,7 +824,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("GuestImported", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Import.
         /// </summary>
@@ -824,7 +833,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ImportActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to IP.
         /// </summary>
@@ -833,7 +842,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("IpCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Language Settings Updated.
         /// </summary>
@@ -842,7 +851,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LanguageSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to License key uploaded.
         /// </summary>
@@ -851,7 +860,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LicenseKeyUploaded", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Link.
         /// </summary>
@@ -860,7 +869,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LinkActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login Fail.
         /// </summary>
@@ -869,7 +878,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login Fail. Too many attempts.
         /// </summary>
@@ -878,7 +887,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailBruteForce", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login Fail. Profile Disabled.
         /// </summary>
@@ -887,7 +896,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailDisabledProfile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login Fail. Invalid username-password combination.
         /// </summary>
@@ -896,7 +905,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailInvalidCombination", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to IP Security: Login Failed.
         /// </summary>
@@ -905,7 +914,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailIpSecurity", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login Fail. Recaptcha is invalid.
         /// </summary>
@@ -914,7 +923,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailRecaptcha", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login Fail. Associated Social Account Not Found.
         /// </summary>
@@ -923,7 +932,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailSocialAccountNotFound", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Failed Login via API.
         /// </summary>
@@ -932,7 +941,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailViaApi", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Failed Login via API &amp; SMS Code.
         /// </summary>
@@ -941,7 +950,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailViaApiSms", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login via API &amp; Social Media Failed.
         /// </summary>
@@ -950,7 +959,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailViaApiSocialAccount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Failed Login via API &amp; authenticator application.
         /// </summary>
@@ -959,7 +968,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailViaApiTfa", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login via SMS failed.
         /// </summary>
@@ -968,7 +977,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailViaSms", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login via SSO Failed.
         /// </summary>
@@ -977,7 +986,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailViaSSO", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login via authenticator application Failed.
         /// </summary>
@@ -986,7 +995,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginFailViaTfaApp", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login History Report Downloaded.
         /// </summary>
@@ -995,7 +1004,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginHistoryReportDownloaded", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login History Report ({0}-{1}).
         /// </summary>
@@ -1004,7 +1013,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginHistoryReportName", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login Success.
         /// </summary>
@@ -1013,7 +1022,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginSuccess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login Via Social Account Success.
         /// </summary>
@@ -1022,7 +1031,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginSuccessSocialAccount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Successful login via social application.
         /// </summary>
@@ -1031,7 +1040,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginSuccessSocialApp", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Successful Login via API.
         /// </summary>
@@ -1040,7 +1049,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginSuccessViaApi", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Successful Login via API &amp; SMS Code.
         /// </summary>
@@ -1049,7 +1058,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginSuccessViaApiSms", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Successful Login via API &amp; authenticator application.
         /// </summary>
@@ -1058,7 +1067,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginSuccessViaApiTfa", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login via SMS successful.
         /// </summary>
@@ -1067,7 +1076,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginSuccessViaSms", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Login via API &amp; Social Media Successful.
         /// </summary>
@@ -1076,7 +1085,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginSuccessViaSocialAccount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Successful Login via SSO.
         /// </summary>
@@ -1085,7 +1094,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginSuccessViaSSO", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Successful Login via authenticator application.
         /// </summary>
@@ -1094,7 +1103,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("LoginSuccesViaTfaApp", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Logout.
         /// </summary>
@@ -1103,7 +1112,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("Logout", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Mail Service Settings Updated.
         /// </summary>
@@ -1112,7 +1121,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("MailServiceSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Module.
         /// </summary>
@@ -1121,7 +1130,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ModuleCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Move.
         /// </summary>
@@ -1130,7 +1139,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("MoveActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Others.
         /// </summary>
@@ -1139,7 +1148,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("OthersProduct", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Owner Changed: {0}.
         /// </summary>
@@ -1148,7 +1157,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("OwnerChanged", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Owner [{0}]. Sent Change Owner Instructions.
         /// </summary>
@@ -1157,7 +1166,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("OwnerSentChangeOwnerInstructions", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Owner [{0}]. Sent Portal Deactivation Instructions.
         /// </summary>
@@ -1166,7 +1175,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("OwnerSentPortalDeactivationInstructions", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Owner [{0}]. Sent Portal Delete Instructions.
         /// </summary>
@@ -1175,7 +1184,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("OwnerSentPortalDeleteInstructions", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Page.
         /// </summary>
@@ -1184,7 +1193,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("PageCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Password Strength Settings Updated.
         /// </summary>
@@ -1193,7 +1202,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("PasswordStrengthSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to People.
         /// </summary>
@@ -1202,7 +1211,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("PeopleProduct", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Platform.
         /// </summary>
@@ -1211,7 +1220,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("PlatformCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Portal Access Settings Updated.
         /// </summary>
@@ -1220,7 +1229,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("PortalAccessSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Portal Deactivated.
         /// </summary>
@@ -1229,7 +1238,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("PortalDeactivated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Portal Deleted.
         /// </summary>
@@ -1238,7 +1247,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("PortalDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Private Room is disabled.
         /// </summary>
@@ -1247,7 +1256,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("PrivacyRoomDisable", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Private Room is enabled.
         /// </summary>
@@ -1256,7 +1265,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("PrivacyRoomEnable", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Products [{0}]. Access Opened.
         /// </summary>
@@ -1265,7 +1274,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ProductAccessOpened", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Products: [{0}]. Groups [{1}].  Access Opened.
         /// </summary>
@@ -1274,7 +1283,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ProductAccessOpenedForGroups", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Products: [{0}]. Users [{1}].  Access Opened.
         /// </summary>
@@ -1283,7 +1292,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ProductAccessOpenedForUsers", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Products [{0}]. Access Restricted.
         /// </summary>
@@ -1292,7 +1301,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ProductAccessRestricted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Products [{0}]. Administrator Added: {1}.
         /// </summary>
@@ -1301,7 +1310,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ProductAddedAdministrator", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Product.
         /// </summary>
@@ -1310,7 +1319,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ProductCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Products [{0}]. Administrator Deleted: {1}.
         /// </summary>
@@ -1319,7 +1328,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ProductDeletedAdministrator", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Products List Updated.
         /// </summary>
@@ -1328,7 +1337,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ProductsListUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Products.
         /// </summary>
@@ -1337,7 +1346,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ProductsModule", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Reassigns.
         /// </summary>
@@ -1346,7 +1355,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ReassignsActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Room archived.
         /// </summary>
@@ -1355,7 +1364,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomArchived", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Room created.
         /// </summary>
@@ -1364,7 +1373,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomCreated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Added user: {0}. Role: {1}.
         /// </summary>
@@ -1373,7 +1382,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomCreateUser", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Room deleted.
         /// </summary>
@@ -1382,7 +1391,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Link created. Role: {1}.
         /// </summary>
@@ -1391,7 +1400,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomLinkCreated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Link deleted.
         /// </summary>
@@ -1400,7 +1409,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomLinkDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Link updated. Role: {1}.
         /// </summary>
@@ -1409,7 +1418,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomLinkUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Logo created.
         /// </summary>
@@ -1418,7 +1427,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomLogoCreated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Logo deleted.
         /// </summary>
@@ -1427,7 +1436,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomLogoDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Deleted user: {0}.
         /// </summary>
@@ -1436,7 +1445,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomRemoveUser", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Room renamed: {0}.
         /// </summary>
@@ -1445,7 +1454,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomRenamed", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Rooms.
         /// </summary>
@@ -1454,7 +1463,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomsModule", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Room unarchived.
         /// </summary>
@@ -1463,7 +1472,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomUnarchived", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to {0} appointed: {1}.
         /// </summary>
@@ -1472,7 +1481,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("RoomUpdateAccessForUser", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Send.
         /// </summary>
@@ -1481,7 +1490,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("SendActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Invite Instructions Sent: {0}.
         /// </summary>
@@ -1490,7 +1499,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("SentInviteInstructions", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Session Completed.
         /// </summary>
@@ -1499,7 +1508,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("SessionCompleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Session Started.
         /// </summary>
@@ -1508,7 +1517,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("SessionStarted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Settings.
         /// </summary>
@@ -1517,7 +1526,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("SettingsProduct", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to SSO Disabled.
         /// </summary>
@@ -1526,7 +1535,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("SSODisabled", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to SSO Enabled.
         /// </summary>
@@ -1535,7 +1544,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("SSOEnabled", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Start backup.
         /// </summary>
@@ -1544,7 +1553,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("StartBackupSetting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Start storage decryption.
         /// </summary>
@@ -1553,7 +1562,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("StartStorageDecryption", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Start storage encryption.
         /// </summary>
@@ -1562,7 +1571,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("StartStorageEncryption", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Start portal region migration.
         /// </summary>
@@ -1571,7 +1580,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("StartTransferSetting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to System Account.
         /// </summary>
@@ -1580,7 +1589,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("SystemAccount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Tag created: {0}.
         /// </summary>
@@ -1589,7 +1598,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TagCreated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Tags deleted: {0}.
         /// </summary>
@@ -1598,7 +1607,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TagsDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Target ID.
         /// </summary>
@@ -1607,7 +1616,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TargetIdCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Team Template Changed.
         /// </summary>
@@ -1616,7 +1625,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TeamTemplateChanged", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Third Party Created: {0}. Provider: {1}.
         /// </summary>
@@ -1625,7 +1634,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ThirdPartyCreated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Third Party Deleted: {0}. Provider: {1}.
         /// </summary>
@@ -1634,7 +1643,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ThirdPartyDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Third Party Updated: {0}. Provider: {1}.
         /// </summary>
@@ -1643,7 +1652,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("ThirdPartyUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Time Tracking.
         /// </summary>
@@ -1652,7 +1661,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TimeTrackingModule", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Time Zone Settings Updated.
         /// </summary>
@@ -1661,7 +1670,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TimeZoneSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Trash emptied.
         /// </summary>
@@ -1670,7 +1679,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TrashEmptied", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Trusted mail domain settings updated.
         /// </summary>
@@ -1679,7 +1688,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TrustedMailDomainSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Two-factor Authentication Settings Updated: Two-factor auth was disabled.
         /// </summary>
@@ -1688,7 +1697,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TwoFactorAuthenticationSettingsDisabled", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Two-factor Authentication Settings Updated: SMS confirmation was enabled.
         /// </summary>
@@ -1697,7 +1706,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TwoFactorAuthenticationSettingsEnabledBySms", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Two-factor Authentication Settings Updated: Authentication app was enabled.
         /// </summary>
@@ -1706,7 +1715,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TwoFactorAuthenticationSettingsEnabledByTfaApp", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Two-factor Authentication Settings Updated.
         /// </summary>
@@ -1715,7 +1724,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("TwoFactorAuthenticationSettingsUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Unfollow.
         /// </summary>
@@ -1724,7 +1733,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UnfollowActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Unknown Account.
         /// </summary>
@@ -1733,7 +1742,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UnknownAccount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Unlink.
         /// </summary>
@@ -1742,7 +1751,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UnlinkActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Updated Access.
         /// </summary>
@@ -1751,7 +1760,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UpdateAccessActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Update.
         /// </summary>
@@ -1760,7 +1769,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UpdateActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Upload.
         /// </summary>
@@ -1769,7 +1778,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UploadActionType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to User Activated: {0}.
         /// </summary>
@@ -1778,7 +1787,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserActivated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users [{0}]. Avatar Added.
         /// </summary>
@@ -1787,7 +1796,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserAddedAvatar", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to User.
         /// </summary>
@@ -1796,7 +1805,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserCol", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to User Created: {0}.
         /// </summary>
@@ -1805,7 +1814,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserCreated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to User Created Via Invite: {0}.
         /// </summary>
@@ -1814,7 +1823,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserCreatedViaInvite", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Data Reassigned: from user {0} to user {1}.
         /// </summary>
@@ -1823,7 +1832,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserDataReassigns", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to User data for {0} has been deleted.
         /// </summary>
@@ -1832,7 +1841,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserDataRemoving", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to User Deleted: {0}.
         /// </summary>
@@ -1841,7 +1850,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users [{0}]. Avatar Deleted.
         /// </summary>
@@ -1850,7 +1859,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserDeletedAvatar", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users [{0}]. File Updated: {1}.
         /// </summary>
@@ -1859,7 +1868,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserFileUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to User Imported: {0}.
         /// </summary>
@@ -1868,7 +1877,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserImported", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Social Account Linked. Provider: {0}.
         /// </summary>
@@ -1877,7 +1886,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserLinkedSocialAccount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users Deleted: {0}.
         /// </summary>
@@ -1886,7 +1895,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UsersDeleted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users [{0}]. Sent Activation Instructions.
         /// </summary>
@@ -1895,7 +1904,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserSentActivationInstructions", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Sent Delete Profile Instructions.
         /// </summary>
@@ -1904,7 +1913,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserSentDeleteInstructions", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users [{0}]. Sent Email Change Instructions.
         /// </summary>
@@ -1913,7 +1922,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserSentEmailInstructions", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users [{0}]. Sent Password Change Instructions.
         /// </summary>
@@ -1922,7 +1931,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserSentPasswordInstructions", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users.
         /// </summary>
@@ -1931,7 +1940,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UsersModule", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users [{0}]. Activation Instructions Sent.
         /// </summary>
@@ -1940,7 +1949,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UsersSentActivationInstructions", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users [{0}]. Updated Status.
         /// </summary>
@@ -1949,7 +1958,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UsersUpdatedStatus", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users [{0}]. Updated Type.
         /// </summary>
@@ -1958,7 +1967,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UsersUpdatedType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Authenticator application disconnected: {0}.
         /// </summary>
@@ -1967,7 +1976,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserTfaDisconnected", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to New backup codes are created.
         /// </summary>
@@ -1976,7 +1985,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserTfaGenerateCodes", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Social Account Unlinked. Provider: {0}.
         /// </summary>
@@ -1985,7 +1994,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserUnlinkedSocialAccount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to User Updated: {0}.
         /// </summary>
@@ -1994,7 +2003,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserUpdated", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users [{0}]. Avatar Thumbnails Updated.
         /// </summary>
@@ -2003,7 +2012,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserUpdatedAvatarThumbnails", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Email Updated.
         /// </summary>
@@ -2012,7 +2021,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserUpdatedEmail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Language Updated.
         /// </summary>
@@ -2021,7 +2030,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserUpdatedLanguage", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Users [{0}]. Mobile Number Updated: {1}.
         /// </summary>
@@ -2030,7 +2039,7 @@ namespace ASC.AuditTrail {
                 return ResourceManager.GetString("UserUpdatedMobileNumber", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Password Updated.
         /// </summary>

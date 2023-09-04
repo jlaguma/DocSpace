@@ -56,6 +56,7 @@ public class SettingsController : BaseSettingsController
     private readonly ILogger _log;
     private readonly TelegramHelper _telegramHelper;
     private readonly DnsSettings _dnsSettings;
+    private readonly TimeoutSettings _timeoutSettings;
     private readonly AdditionalWhiteLabelSettingsHelperInit _additionalWhiteLabelSettingsHelper;
     private readonly CustomColorThemesSettingsHelper _customColorThemesSettingsHelper;
     private readonly QuotaUsageManager _quotaUsageManager;
@@ -92,6 +93,7 @@ public class SettingsController : BaseSettingsController
         PasswordHasher passwordHasher,
         IHttpContextAccessor httpContextAccessor,
         DnsSettings dnsSettings,
+        TimeoutSettings timeoutSettings,
         AdditionalWhiteLabelSettingsHelperInit additionalWhiteLabelSettingsHelper,
         CustomColorThemesSettingsHelper customColorThemesSettingsHelper,
         QuotaSyncOperation quotaSyncOperation,
@@ -124,6 +126,7 @@ public class SettingsController : BaseSettingsController
         _urlShortener = urlShortener;
         _telegramHelper = telegramHelper;
         _dnsSettings = dnsSettings;
+        _timeoutSettings = timeoutSettings;
         _additionalWhiteLabelSettingsHelper = additionalWhiteLabelSettingsHelper;
         _quotaSyncOperation = quotaSyncOperation;
         _customColorThemesSettingsHelper = customColorThemesSettingsHelper;
@@ -151,7 +154,9 @@ public class SettingsController : BaseSettingsController
             TenantAlias = Tenant.Alias,
             EnableAdmMess = studioAdminMessageSettings.Enable || _tenantExtra.IsNotPaid(),
             LegalTerms = _setupInfo.LegalTerms,
-            CookieSettingsEnabled = tenantCookieSettings.Enabled
+            CookieSettingsEnabled = tenantCookieSettings.Enabled,
+            FileTimeoutSeconds = Tenant.FileTimeoutSeconds,
+            FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled,
         };
 
         if (_authContext.IsAuthenticated)
@@ -163,6 +168,8 @@ public class SettingsController : BaseSettingsController
             settings.UtcOffset = _timeZoneConverter.GetTimeZone(timeZone).GetUtcOffset(DateTime.UtcNow);
             settings.UtcHoursOffset = settings.UtcOffset.TotalHours;
             settings.OwnerId = Tenant.OwnerId;
+            settings.FileTimeoutSeconds = Tenant.FileTimeoutSeconds;
+            settings.FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled;
             settings.NameSchemaId = _customNamingPeople.Current.Id;
             settings.SocketUrl = _configuration["web:hub:url"] ?? "";
             settings.DomainValidator = _tenantDomainValidator;
@@ -331,6 +338,18 @@ public class SettingsController : BaseSettingsController
     public object SaveDnsSettings(DnsSettingsRequestsDto model)
     {
         return _dnsSettings.SaveDnsSettings(model.DnsName, model.Enable);
+    }
+
+    [HttpPut("timeout")]
+    public object SaveTimeoutSettings(TimeoutSettingsRequestsDto model)
+    {
+        return _timeoutSettings.SaveTimeoutSettings(model.TimeoutSeconds, model.Enable);
+    }
+
+    [HttpGet("timeout")]
+    public TimeoutSettingsRequestsDto GetTimeoutSettings()
+    {
+        return _timeoutSettings.GetTimeoutSettings();
     }
 
     [HttpGet("recalculatequota")]
@@ -775,7 +794,7 @@ public class SettingsController : BaseSettingsController
     /// Gets a link that will connect TelegramBot to your account
     /// </summary>
     /// <returns>url</returns>
-    /// 
+    ///
     [HttpGet("telegramlink")]
     public object TelegramLink()
     {

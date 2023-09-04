@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Priprava datoteke za šifriranje",
   "EncryptionKeysReload": "Ključe za šifriranje je potrebno znova vnesti",
   "EnterName": "Vnesite ime",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Napaka",
   "ErrorInternalServer": "Notranja napaka strežnika. Ponovno poskusite kasneje.",
   "ErrorReport": "Poročilo o napaki",

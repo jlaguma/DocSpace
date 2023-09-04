@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Ֆայլի պատրաստում գաղտնագրման համար",
   "EncryptionKeysReload": "Գաղտնագրման բանալիները պետք է նորից մուտքագրվեն",
   "EnterName": "Մուտքագրեք անունը",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Սխալ",
   "ErrorInternalServer": "Ներքին սերվերի սխալ: Փորձեք ավելի ուշ:",
   "ErrorReport": "Սխալի մասին հաղորդում",

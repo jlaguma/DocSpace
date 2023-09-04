@@ -103,6 +103,7 @@
   "EncryptionFilePreparing": "Dosya şifreleme için hazırlanıyor",
   "EncryptionKeysReload": "Şifreleme anahtarları yeniden girilmelidir",
   "EnterName": "İsim girin",
+  "EnterTimeout": "Enter timeout seconds",
   "Error": "Hata",
   "ErrorInternalServer": "İç sunucu hatası. Daha sonra tekrar deneyin.",
   "ErrorReport": "Hata raporu",
