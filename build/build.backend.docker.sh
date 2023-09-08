@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-echo "Run script directory:" $dir
+echo "Run script directory:" $rd
 
 dir=$(builtin cd $rd/../; pwd)
 dockerDir="$dir/build/install/docker"
@@ -48,7 +48,7 @@ echo "Clear publish folder"
 rm -rf $dir/publish
 
 echo "Build backend services (to "publish/" folder)"
-bash $dir/build/install/common/build-services.sh -pb backend-publish -pc Debug -de "$dockerDir/docker-entrypoint.py"
+bash $dir/build/install/common/build-services.sh -sp /home/james/DocSpace -pb backend-publish -pc Debug -de "$dockerDir/docker-entrypoint.py"
 
 echo "Run migration and services"
 ENV_EXTENSION="dev" \

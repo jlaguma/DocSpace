@@ -176,7 +176,7 @@ function backend-nodejs-publish {
   get_services_name "${BACKEND_NODEJS_SERVICES}"
   for i in ${!ARRAY_NAME_SERVICES[@]}; do
     echo "== Build ${ARRAY_NAME_SERVICES[$i]} project =="
-    yarn install --cwd ${SRC_PATH}/common/${ARRAY_NAME_SERVICES[$i]} --frozen-lockfile && \
+    yarn install --cwd ${SRC_PATH}/common/${ARRAY_NAME_SERVICES[$i]} && \
     mkdir -p ${BUILD_PATH}/services/${ARRAY_NAME_SERVICES[$i]}/service/ && \
     cp -rfv ${SRC_PATH}/common/${ARRAY_NAME_SERVICES[$i]}/* ${BUILD_PATH}/services/${ARRAY_NAME_SERVICES[$i]}/service/
     if [[ ${DOCKER_ENTRYPOINT} != "false" ]]

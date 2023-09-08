@@ -224,37 +224,54 @@ services:
       - '5011'
 
   onlyoffice-proxy:
-    image: '${REPO}/${DOCKER_IMAGE_PREFIX}-proxy:${DOCKER_TAG}'
-    profiles: ['prod', 'backend', frontend]
+    image: "${REPO}/${DOCKER_IMAGE_PREFIX}-proxy:${DOCKER_TAG}"
+    profiles: ["prod", "backend", frontend]
     container_name: ${PROXY_HOST}
     restart: always
     healthcheck:
-      <<: *x-healthcheck
+      # <<: *x-healthcheck
       test: nginx -t || exit 1
     expose:
-      - '8081'
-      - '8099'
-      - '8092'
+      - "8081"
+      - "8099"
+      - "8092"
     ports:
       - 8092:8092
     environment:
-      - SERVICE_BACKUP=${SERVICE_BACKUP}
-      - SERVICE_FILES=${SERVICE_FILES}
-      - SERVICE_FILES_SERVICES=${SERVICE_FILES_SERVICES}
-      - SERVICE_CLEAR_EVENTS=${SERVICE_CLEAR_EVENTS}
-      - SERVICE_NOTIFY=${SERVICE_NOTIFY}
-      - SERVICE_PEOPLE_SERVER=${SERVICE_PEOPLE_SERVER}
-      - SERVICE_SOCKET=${SERVICE_SOCKET}
-      - SERVICE_STUDIO_NOTIFY=${SERVICE_STUDIO_NOTIFY}
-      - SERVICE_API=${SERVICE_API}
-      - SERVICE_API_SYSTEM=${SERVICE_API_SYSTEM}
-      - SERVICE_STUDIO=${SERVICE_STUDIO}
-      - SERVICE_SSOAUTH=${SERVICE_SSOAUTH}
-      - SERVICE_DOCEDITOR=${SERVICE_DOCEDITOR}
-      - SERVICE_LOGIN=${SERVICE_LOGIN}
-      - SERVICE_HELTHCHECKS=${SERVICE_HELTHCHECKS}
-      - DOCUMENT_SERVER=${DOCUMENT_SERVER_HOST}
-      - SERVICE_PORT=${SERVICE_PORT}
+      # - SERVICE_BACKUP=${SERVICE_BACKUP}
+      # - SERVICE_FILES=${SERVICE_FILES}
+      # - SERVICE_FILES_SERVICES=${SERVICE_FILES_SERVICES}
+      # - SERVICE_CLEAR_EVENTS=${SERVICE_CLEAR_EVENTS}
+      # - SERVICE_NOTIFY=${SERVICE_NOTIFY}
+      # - SERVICE_PEOPLE_SERVER=${SERVICE_PEOPLE_SERVER}
+      # - SERVICE_SOCKET=${SERVICE_SOCKET}
+      # - SERVICE_STUDIO_NOTIFY=${SERVICE_STUDIO_NOTIFY}
+      # - SERVICE_API=${SERVICE_API}
+      # - SERVICE_API_SYSTEM=${SERVICE_API_SYSTEM}
+      # - SERVICE_STUDIO=${SERVICE_STUDIO}
+      # - SERVICE_SSOAUTH=${SERVICE_SSOAUTH}
+      # - SERVICE_DOCEDITOR=${SERVICE_DOCEDITOR}
+      # - SERVICE_LOGIN=${SERVICE_LOGIN}
+      # - SERVICE_HELTHCHECKS=${SERVICE_HELTHCHECKS}
+      # - DOCUMENT_SERVER=${DOCUMENT_SERVER_HOST}
+      # - SERVICE_PORT=${SERVICE_PORT}
+      - SERVICE_BACKUP=onlyoffice-backup:5050
+      - SERVICE_FILES=onlyoffice-files:5050
+      - SERVICE_FILES_SERVICES=onlyoffice-files-services:5050
+      - SERVICE_CLEAR_EVENTS=onlyoffice-clear-events:5050
+      - SERVICE_NOTIFY=onlyoffice-notify:5050
+      - SERVICE_PEOPLE_SERVER=onlyoffice-people-server:5050
+      - SERVICE_SOCKET=onlyoffice-socket:5050
+      - SERVICE_STUDIO_NOTIFY=onlyoffice-studio-notify:5050
+      - SERVICE_API=onlyoffice-api:5050
+      - SERVICE_API_SYSTEM=onlyoffice-api-system:5050
+      - SERVICE_STUDIO=onlyoffice-studio:5050
+      - SERVICE_SSOAUTH=onlyoffice-ssoauth:5050
+      - SERVICE_DOCEDITOR=192.168.0.36:5013
+      - SERVICE_LOGIN=192.168.0.36:5011
+      - SERVICE_HELTHCHECKS=onlyoffice-healthchecks:5050
+      - DOCUMENT_SERVER=onlyoffice-document-server
+      - SERVICE_PORT=5050
     volumes:
       - proxy_log:/var/log/nginx
 
