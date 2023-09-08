@@ -229,7 +229,7 @@ services:
     container_name: ${PROXY_HOST}
     restart: always
     healthcheck:
-      # <<: *x-healthcheck
+      <<: *x-healthcheck
       test: nginx -t || exit 1
     expose:
       - "8081"
@@ -250,11 +250,13 @@ services:
       - SERVICE_API_SYSTEM=${SERVICE_API_SYSTEM}
       - SERVICE_STUDIO=${SERVICE_STUDIO}
       - SERVICE_SSOAUTH=${SERVICE_SSOAUTH}
-      - SERVICE_DOCEDITOR=192.168.0.36:5013
-      - SERVICE_LOGIN=192.168.0.36:5011
+      - SERVICE_DOCEDITOR=${SERVICE_DOCEDITOR}
+      - SERVICE_LOGIN=${SERVICE_LOGIN}
       - SERVICE_HELTHCHECKS=${SERVICE_HELTHCHECKS}
       - DOCUMENT_SERVER=${DOCUMENT_SERVER_HOST}
       - SERVICE_PORT=5050
+      - DOCUMENT_SERVER_URL_EXTERNAL=onlyoffice-document-server
+      - DOCUMENT_CONTAINER_NAME=onlyoffice-document-server
     volumes:
       - proxy_log:/var/log/nginx
 
