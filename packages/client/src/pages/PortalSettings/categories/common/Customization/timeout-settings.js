@@ -66,6 +66,7 @@ const TimeoutSettings = (props) => {
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
+    console.log("XXX props", props);
     setDocumentTitle(t("TimeoutSettings"));
 
     if (!isLoaded) initSettings().then(() => setIsLoaded(true));
@@ -81,9 +82,8 @@ const TimeoutSettings = (props) => {
     }
 
     // TODO: Remove div with height 64 and remove settings-mobile class
-    const settingsMobile = document.getElementsByClassName(
-      "settings-mobile"
-    )[0];
+    const settingsMobile =
+      document.getElementsByClassName("settings-mobile")[0];
 
     if (settingsMobile) {
       settingsMobile.style.display = "none";
