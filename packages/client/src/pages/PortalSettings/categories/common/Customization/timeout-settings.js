@@ -184,7 +184,7 @@ const TimeoutSettings = (props) => {
               scale={true}
               value={timeoutSeconds}
               onChange={onChangeTextInput}
-              isDisabled={isLoading || !enable}
+              isDisabled={isLoading || enable === "0"}
               hasError={isError}
               placeholder={`${t("Common:EnterTimeout")}`}
             />
@@ -218,7 +218,7 @@ const TimeoutSettings = (props) => {
       {...buttonProps}
       label={t("Common:SaveButton")}
       onClick={onSaveSettings}
-      isDisabled={isLoading || isDefaultTimeout}
+      isDisabled={isLoading || isDefaultTimeout || enable === "0"}
       isLoading={isLoading}
     />
   ) : (
