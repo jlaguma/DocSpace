@@ -159,7 +159,7 @@ public class SettingsController : BaseSettingsController
             FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled,
         };
 
-        console.log('XXX Tenant.FileTimeoutSeconds Tenant.FileTimeoutSecondsEnabled', Tenant.FileTimeoutSeconds, Tenant.FileTimeoutSecondsEnabled)
+        System.Console.WriteLine("XXX Tenant.FileTimeoutSeconds: {Tenant.FileTimeoutSeconds} Tenant.FileTimeoutSecondsEnabled: {Tenant.FileTimeoutSecondsEnabled}");
 
         if (_authContext.IsAuthenticated)
         {
