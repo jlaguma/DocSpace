@@ -65,6 +65,7 @@ export function setDNSSettings(dnsName, enable) {
 
 export function setTimeoutSettings(timeoutSeconds, enable) {
   const e = enable === 1 ? "1" : "0";
+  console.log("XXX enable", enable, e);
   const data = { timeoutSeconds, enable: e };
   console.log("XXX data", data);
 

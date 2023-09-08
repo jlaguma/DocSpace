@@ -218,7 +218,7 @@ const TimeoutSettings = (props) => {
       {...buttonProps}
       label={t("Common:SaveButton")}
       onClick={onSaveSettings}
-      isDisabled={isLoading || isDefaultTimeout || enable === "0"}
+      isDisabled={isLoading}
       isLoading={isLoading}
     />
   ) : (
