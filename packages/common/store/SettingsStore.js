@@ -148,7 +148,7 @@ class SettingsStore {
   companyInfoSettingsIsDefault = true;
 
   whiteLabelLogoUrls = [];
-  standalone = false;
+  standalone = true;
 
   mainBarVisible = false;
   zendeskKey = null;
