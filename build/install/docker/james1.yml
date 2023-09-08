@@ -36,6 +36,7 @@ services:
       - SERVICE_HELTHCHECKS=onlyoffice-healthchecks:5050
       - DOCUMENT_SERVER=onlyoffice-document-server
       - SERVICE_PORT=5050
+      - document_server_url_external=onlyoffice-document-server
     volumes:
       - proxy_log:/var/log/nginx
       - /home/james/DocSpace/public:/var/www/public/
