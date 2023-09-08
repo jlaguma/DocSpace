@@ -159,8 +159,6 @@ public class SettingsController : BaseSettingsController
             FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled,
         };
 
-        System.Console.WriteLine("XXX Tenant.FileTimeoutSeconds: {Tenant.FileTimeoutSeconds} Tenant.FileTimeoutSecondsEnabled: {Tenant.FileTimeoutSecondsEnabled}");
-
         if (_authContext.IsAuthenticated)
         {
             settings.TrustedDomains = Tenant.TrustedDomains;

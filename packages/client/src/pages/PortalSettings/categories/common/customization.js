@@ -77,7 +77,6 @@ const Customization = (props) => {
   const isLoadedSetting = isLoaded && tReady;
 
   useEffect(() => {
-    console.log("XXX Customization");
     setDocumentTitle(t("Customization"));
   }, []);
 
@@ -106,7 +105,6 @@ const Customization = (props) => {
       <StyledSettingsSeparator />
       <PortalRenaming isMobileView={viewMobile} />
       <StyledSettingsSeparator />
-      XXXXXX
       <TimeoutSettings isMobileView={viewMobile} />
     </StyledComponent>
   );

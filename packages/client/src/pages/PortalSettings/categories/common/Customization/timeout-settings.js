@@ -66,7 +66,6 @@ const TimeoutSettings = (props) => {
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
-    console.log("XXX props", props);
     setDocumentTitle(t("TimeoutSettings"));
 
     if (!isLoaded) initSettings().then(() => setIsLoaded(true));
