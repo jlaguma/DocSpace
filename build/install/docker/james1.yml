@@ -1,0 +1,51 @@
+version: "3.8"
+
+services:
+  onlyoffice-proxy:
+    image: "onlyoffice/docspace-proxy:latest"
+    container_name: onlyoffice-proxy
+    restart: always
+    healthcheck:
+      test: nginx -t || exit 1
+    expose:
+      - "8081"
+      - "8099"
+      - "8092"
+    ports:
+      - 8092:8092
+    environment:
+      - SERVICE_BACKUP=onlyoffice-backup:5050
+      - SERVICE_FILES=onlyoffice-files:5050
+      - SERVICE_FILES_SERVICES=onlyoffice-files-services:5050
+      - SERVICE_CLEAR_EVENTS=onlyoffice-clear-events:5050
+      - SERVICE_NOTIFY=onlyoffice-notify:5050
+      - SERVICE_PEOPLE_SERVER=onlyoffice-people-server:5050
+      - SERVICE_SOCKET=onlyoffice-socket:5050
+      - SERVICE_STUDIO_NOTIFY=onlyoffice-studio-notify:5050
+      - SERVICE_API=onlyoffice-api:5050
+      - SERVICE_API_SYSTEM=onlyoffice-api-system:5050
+      - SERVICE_STUDIO=onlyoffice-studio:5050
+      - SERVICE_SSOAUTH=onlyoffice-ssoauth:5050
+      - SERVICE_DOCEDITOR=192.168.0.36:5013
+      - SERVICE_LOGIN=192.168.0.36:5011
+      - SERVICE_HELTHCHECKS=onlyoffice-healthchecks:5050
+      - DOCUMENT_SERVER=onlyoffice-document-server
+      - SERVICE_PORT=5050
+    volumes:
+      - proxy_log:/var/log/nginx
+
+networks:
+  default:
+    name: onlyoffice
+    external: true
+
+volumes:
+  es_data:
+  proxy_log:
+  app_data:
+  files_data:
+  people_data:
+  crm_data:
+  project_data:
+  calendar_data:
+  mail_data:
