@@ -175,14 +175,14 @@ public static class DbTenantExtension
                 .UseCollation("utf8_general_ci");
 
             entity.Property(e => e.FileTimeoutDays)
-                .HasColumnName("file_timeout_seconds")
+                .HasColumnName("file_timeout_days")
                 .HasColumnType("varchar(38)")
                 .IsRequired(false)
                 .HasCharSet("utf8")
                 .UseCollation("utf8_general_ci");
 
             entity.Property(e => e.FileTimeoutDaysEnabled)
-                .HasColumnName("file_timeout_seconds_enabled")
+                .HasColumnName("file_timeout_days_enabled")
                 .HasColumnType("varchar(1)")
                 .IsRequired(false)
                 .HasCharSet("utf8")
@@ -300,12 +300,12 @@ public static class DbTenantExtension
                 .HasMaxLength(255);
 
             entity.Property(e => e.FileTimeoutDays)
-                .HasColumnName("file_timeout_seconds")
+                .HasColumnName("file_timeout_days")
                 .HasMaxLength(38)
                 .HasDefaultValueSql("NULL");
 
             entity.Property(e => e.FileTimeoutDaysEnabled)
-                .HasColumnName("file_timeout_seconds_enabled")
+                .HasColumnName("file_timeout_days_enabled")
                 .HasMaxLength(38)
                 .HasDefaultValueSql("NULL");
 

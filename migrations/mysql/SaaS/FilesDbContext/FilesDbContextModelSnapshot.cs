@@ -77,13 +77,13 @@ namespace ASC.Migrations.MySql.Migrations.FilesDb
 
                     b.Property<string>("FileTimeoutDays")
                         .HasColumnType("varchar(38)")
-                        .HasColumnName("file_timeout_seconds")
+                        .HasColumnName("file_timeout_days")
                         .UseCollation("utf8_general_ci")
                         .HasAnnotation("MySql:CharSet", "utf8");
 
                     b.Property<string>("FileTimeoutDaysEnabled")
                         .HasColumnType("varchar(1)")
-                        .HasColumnName("file_timeout_seconds_enabled")
+                        .HasColumnName("file_timeout_days_enabled")
                         .UseCollation("utf8_general_ci")
                         .HasAnnotation("MySql:CharSet", "utf8");
 
