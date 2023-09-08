@@ -47,23 +47,23 @@ public class TimeoutSettings
     public TimeoutSettingsRequestsDto GetTimeoutSettings()
     {
         TimeoutSettingsRequestsDto timeout = new TimeoutSettingsRequestsDto();
-        string FileTimeoutSeconds = _tenantManager.GetCurrentTenant().FileTimeoutSeconds;
-        string FileTimeoutSecondsEnabled = _tenantManager.GetCurrentTenant().FileTimeoutSecondsEnabled;
-        timeout.TimeoutSeconds = FileTimeoutSeconds;
-        timeout.Enable = FileTimeoutSecondsEnabled;
+        string FileTimeoutDays = _tenantManager.GetCurrentTenant().FileTimeoutDays;
+        string FileTimeoutDaysEnabled = _tenantManager.GetCurrentTenant().FileTimeoutDaysEnabled;
+        timeout.TimeoutDays = FileTimeoutDays;
+        timeout.Enable = FileTimeoutDaysEnabled;
 
         return timeout;
     }
 
-    public string SaveTimeoutSettings(string timeoutSeconds, string enableTimeout)
+    public string SaveTimeoutSettings(string timeoutDays, string enableTimeout)
     {
         try
         {
             _permissionContext.DemandPermissions(SecutiryConstants.EditPortalSettings);
 
             var tenant = _tenantManager.GetCurrentTenant();
-            tenant.FileTimeoutSeconds = timeoutSeconds;
-            tenant.FileTimeoutSecondsEnabled = enableTimeout;
+            tenant.FileTimeoutDays = timeoutDays;
+            tenant.FileTimeoutDaysEnabled = enableTimeout;
             _tenantManager.SaveTenant(tenant);
             _messageService.Send(MessageAction.TimeoutSettingsUpdated);
 

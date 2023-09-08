@@ -188,7 +188,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Часовий пояс",
   "TrustedMail": "Налаштування довірених поштових доменів",
   "TrustedMailDescription": "<1>Параметри надійного поштового домену</1> – спосіб указати поштові сервери, які використовуються для самореєстрації користувачів. <br> Можна вказати параметр <2>Настроювані домени</2> та ввести надійний поштовий сервер у поле нижче, щоб користувач, який має обліковий запис на цьому сервері, зміг зареєструвати себе, вибравши посилання \"Приєднання\" на сторінці <3>Вхід</3>, або вимкнути його. <br> Щоб встановлені параметри почали діяти, клацніть кнопку <4>Зберегти</4> внизу цього розділу.",

@@ -189,7 +189,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Zaman Dilimi",
   "TrustedMail": "Güvenilir E-Posta Alan Adı Ayarları",
   "TrustedMailHelper": "Özel alanlarseçeneğini kontrol edebilir ve aşağıdaki alana güvenli posta sunucusunu girebilirsiniz. Böylece hesabı olan kişi Giriş Yap sayfasındaki Katıl bağlantısına tıklayarak kendini kaydettirebilir yada bu seçeneği devre dışı bırakabilir.",

@@ -189,7 +189,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Saat Qurşağı",
   "TrustedMail": "Etibarlı elektron poçt domen ayarları",
   "TrustedMailHelper": "Hesabı olan şəxsin Daxil olma səhifəsindəki Qoşulma keçidinə klikləməklə qeydiyyatdan keçə bilməsi üçün Fərdi domenlər seçiminə nəzər sala və aşağıdakı bölmədə etibarlı poçt serverini daxil edə, yaxud da bu seçimi deaktiv edə bilərsiniz.",

@@ -189,7 +189,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Časové pásmo",
   "TrustedMail": "Nastavení důvěryhodných Mailových domén",
   "TrustedMailDescription": "<1>Nastavení důvěryhodné mailové domény</1> je možnost, která nastaví mailové servery používané pro vlastní registraci uživatele. <br> Buď můžete zaškrtnout možnost <2>Vlastní domény</2> a zadat důvěryhodné mailové server v polích níže, takže osoba, která má na něm účet, se bude moci zaregistrovat sám pomocí odkazu Připojit na <3>Přihlašovací</3>stránce nebo zakázat tuto volbu. <br> Chcete-li nově nastavené parametry aktivovat, klikněte na tlačítko <4>Uložit</4> v dolní části.",

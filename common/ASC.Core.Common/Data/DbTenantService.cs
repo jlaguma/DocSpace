@@ -236,8 +236,8 @@ public class DbTenantService : ITenantService
                     dbTenant.Alias = tenant.Alias.ToLowerInvariant();
                     dbTenant.MappedDomain = !string.IsNullOrEmpty(tenant.MappedDomain) ? tenant.MappedDomain.ToLowerInvariant() : null;
                     dbTenant.Version = tenant.Version;
-                    dbTenant.FileTimeoutSeconds = tenant.FileTimeoutSeconds;
-                    dbTenant.FileTimeoutSecondsEnabled = tenant.FileTimeoutSecondsEnabled;
+                    dbTenant.FileTimeoutDays = tenant.FileTimeoutDays;
+                    dbTenant.FileTimeoutDaysEnabled = tenant.FileTimeoutDaysEnabled;
                     dbTenant.VersionChanged = tenant.VersionChanged;
                     dbTenant.Name = tenant.Name ?? "";
                     dbTenant.Language = tenant.Language;

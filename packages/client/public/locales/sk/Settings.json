@@ -188,7 +188,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Časové pásmo",
   "TrustedMail": "Nastavenia domény dôveryhodnej pošty",
   "TrustedMailHelper": "Môžete buď zaškrtnúť možnosť Vlastné domény a zadať dôveryhodný poštový server do poľa nižšie, aby sa osoba, ktorá na ňom má účet, mohla zaregistrovať kliknutím na odkaz Pripojiť sa na prihlasovacej stránke alebo zakázať túto možnosť.",

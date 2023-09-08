@@ -32,8 +32,8 @@ public class DbTenant : IMapFrom<Tenant>
     public string Name { get; set; }
     public string Alias { get; set; }
     public string MappedDomain { get; set; }
-    public string FileTimeoutSeconds { get; set; }
-    public string FileTimeoutSecondsEnabled { get; set; }
+    public string FileTimeoutDays { get; set; }
+    public string FileTimeoutDaysEnabled { get; set; }
     public int Version { get; set; }
     public DateTime? Version_Changed { get; set; }
     public DateTime VersionChanged
@@ -93,8 +93,8 @@ public static class DbTenantExtension
                 CreationDateTime = new DateTime(2021, 3, 9, 17, 46, 59, 97, DateTimeKind.Utc).AddTicks(4317),
                 OwnerId = Guid.Parse("66faa6e4-f133-11ea-b126-00ffeec8b4ef"),
                 LastModified = new DateTime(2022, 7, 8),
-                FileTimeoutSeconds = "0",
-                FileTimeoutSecondsEnabled = "0"
+                FileTimeoutDays = "0",
+                FileTimeoutDaysEnabled = "0"
             }
             );
 
@@ -174,14 +174,14 @@ public static class DbTenantExtension
                 .HasCharSet("utf8")
                 .UseCollation("utf8_general_ci");
 
-            entity.Property(e => e.FileTimeoutSeconds)
+            entity.Property(e => e.FileTimeoutDays)
                 .HasColumnName("file_timeout_seconds")
                 .HasColumnType("varchar(38)")
                 .IsRequired(false)
                 .HasCharSet("utf8")
                 .UseCollation("utf8_general_ci");
 
-            entity.Property(e => e.FileTimeoutSecondsEnabled)
+            entity.Property(e => e.FileTimeoutDaysEnabled)
                 .HasColumnName("file_timeout_seconds_enabled")
                 .HasColumnType("varchar(1)")
                 .IsRequired(false)
@@ -299,12 +299,12 @@ public static class DbTenantExtension
                 .HasColumnName("name")
                 .HasMaxLength(255);
 
-            entity.Property(e => e.FileTimeoutSeconds)
+            entity.Property(e => e.FileTimeoutDays)
                 .HasColumnName("file_timeout_seconds")
                 .HasMaxLength(38)
                 .HasDefaultValueSql("NULL");
 
-            entity.Property(e => e.FileTimeoutSecondsEnabled)
+            entity.Property(e => e.FileTimeoutDaysEnabled)
                 .HasColumnName("file_timeout_seconds_enabled")
                 .HasMaxLength(38)
                 .HasDefaultValueSql("NULL");

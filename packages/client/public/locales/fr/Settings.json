@@ -194,7 +194,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Fuseau horaire",
   "TrustedMail": "Paramètres de domaines de messagerie autorisés",
   "TrustedMailDescription": "Les <1>paramètres de domaines de messagerie autorisés</1> vous permettent de spécifier les serveurs de messagerie qui peuvent être utilisés par les utilisateurs lors de leur auto-inscription. <br> Vous pouvez sélectionner l'option <2>Domaines autorisés</2> et entrer les serveurs autorisés dans le champ au-dessous pour que la personne qui a un compte au serveur de messagerie spécifié puisse s'inscrire en cliquant sur le lien </3>Se joindre</3> sur la Page de connexion ou désactiver cette option. <br> Pour appliquer les modifications effectuées, utilisez le bouton <4>Enregistrer</4> en bas de la section.",

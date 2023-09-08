@@ -47,7 +47,7 @@ public class Tenant : IMapFrom<DbTenant>
         StatusChangeDate = DateTime.UtcNow;
         VersionChanged = DateTime.UtcNow;
         Industry = TenantIndustry.Other;
-        //FileTimeoutSeconds = {timeoutSeconds: 0, enabled: false};
+        //FileTimeoutDays = {timeoutDays: 0, enabled: 0};
     }
 
     public Tenant(string alias)
@@ -73,8 +73,8 @@ public class Tenant : IMapFrom<DbTenant>
     public string Language { get; set; }
     public DateTime LastModified { get; set; }
     public string MappedDomain { get; set; }
-    public string FileTimeoutSeconds { get; set; }
-    public string FileTimeoutSecondsEnabled { get; set; }
+    public string FileTimeoutDays { get; set; }
+    public string FileTimeoutDaysEnabled { get; set; }
     public string Name { get; set; }
     public Guid OwnerId { get; set; }
     public string PaymentId { get; set; }

@@ -189,7 +189,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Fus orar",
   "TrustedMail": "Setările domeniului de e-mail de încredere",
   "TrustedMailHelper": "Puteți activa opțiunea Domenii particularizate și introduce domeniul de e-mail de încredere în câmpul de mai jos astfel încât o persoană care are un asemenea cont va putea să se înregistreze făcând clic pe Devino membru pe Pagina de autentificare sau puteți dezactiva opțiunea.",

@@ -155,8 +155,8 @@ public class SettingsController : BaseSettingsController
             EnableAdmMess = studioAdminMessageSettings.Enable || _tenantExtra.IsNotPaid(),
             LegalTerms = _setupInfo.LegalTerms,
             CookieSettingsEnabled = tenantCookieSettings.Enabled,
-            FileTimeoutSeconds = Tenant.FileTimeoutSeconds,
-            FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled,
+            FileTimeoutDays = Tenant.FileTimeoutDays,
+            FileTimeoutDaysEnabled = Tenant.FileTimeoutDaysEnabled,
         };
 
         if (_authContext.IsAuthenticated)
@@ -168,8 +168,8 @@ public class SettingsController : BaseSettingsController
             settings.UtcOffset = _timeZoneConverter.GetTimeZone(timeZone).GetUtcOffset(DateTime.UtcNow);
             settings.UtcHoursOffset = settings.UtcOffset.TotalHours;
             settings.OwnerId = Tenant.OwnerId;
-            settings.FileTimeoutSeconds = Tenant.FileTimeoutSeconds;
-            settings.FileTimeoutSecondsEnabled = Tenant.FileTimeoutSecondsEnabled;
+            settings.FileTimeoutDays = Tenant.FileTimeoutDays;
+            settings.FileTimeoutDaysEnabled = Tenant.FileTimeoutDaysEnabled;
             settings.NameSchemaId = _customNamingPeople.Current.Id;
             settings.SocketUrl = _configuration["web:hub:url"] ?? "";
             settings.DomainValidator = _tenantDomainValidator;
@@ -343,7 +343,7 @@ public class SettingsController : BaseSettingsController
     [HttpPut("timeout")]
     public object SaveTimeoutSettings(TimeoutSettingsRequestsDto model)
     {
-        return _timeoutSettings.SaveTimeoutSettings(model.TimeoutSeconds, model.Enable);
+        return _timeoutSettings.SaveTimeoutSettings(model.TimeoutDays, model.Enable);
     }
 
     [HttpGet("timeout")]

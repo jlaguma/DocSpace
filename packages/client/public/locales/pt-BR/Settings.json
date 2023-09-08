@@ -196,7 +196,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Fuso Horário",
   "TrustedMail": "Configurações de Domínio de Correio Confiável",
   "TrustedMailHelper": "Você pode marcar a opção Domínios personalizados e inserir o servidor de e-mail confiável no campo abaixo para que uma pessoa que possua uma conta possa se registrar clicando no link de Ingresso na página Entrar, ou desative esta opção.",

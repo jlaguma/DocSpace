@@ -193,7 +193,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "タイムゾーン",
   "TrustedMail": "信頼されたメールドメインの設定",
   "TrustedMailDescription": "<1>信頼済みメールドメインの設定</1>は、ユーザーの自己登録に使用するメールサーバを指定する方法です。<br><2>カスタムドメイン</2>オプションにチェックを入れ、下のフィールドに信頼できるメールサーバーを入力し、そのサーバーにアカウントを持っている人が<3>サインイン</3>ページの参加リンクをクリックして登録できるようにするか、このオプションを無効にします。<br>設定したパラメーターを有効にするには、セクションの一番下にある<4>保存</4>ボタンをクリックしてください。",

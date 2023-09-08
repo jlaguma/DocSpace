@@ -36,8 +36,8 @@ public class SettingsDto
     public double UtcHoursOffset { get; set; }
     public string GreetingSettings { get; set; }
     public Guid OwnerId { get; set; }
-    public string FileTimeoutSeconds { get; set; }
-    public string FileTimeoutSecondsEnabled { get; set; }
+    public string FileTimeoutDays { get; set; }
+    public string FileTimeoutDaysEnabled { get; set; }
     public string NameSchemaId { get; set; }
     public bool? EnabledJoin { get; set; }
     public bool? EnableAdmMess { get; set; }
@@ -77,8 +77,8 @@ public class SettingsDto
             UtcOffset = TimeSpan.FromHours(-8.5),
             GreetingSettings = "Web Office Applications",
             OwnerId = new Guid(),
-            FileTimeoutSeconds = "0",
-            FileTimeoutSecondsEnabled = "0",
+            FileTimeoutDays = "0",
+            FileTimeoutDaysEnabled = "0",
         };
     }
 }

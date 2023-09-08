@@ -92,7 +92,7 @@ class CommonStore {
   get isDefaultTimeout() {
     const { customObj, defaultObj } = this.timeoutSettings;
     return (
-      defaultObj.timeoutSeconds === customObj.timeoutSeconds &&
+      defaultObj.timeoutDays === customObj.timeoutDays &&
       defaultObj.enable === customObj.enable
     );
   }
@@ -100,8 +100,8 @@ class CommonStore {
     this.dnsSettings.customObj.enable = value;
   };
 
-  setTimeoutSeconds = (value) => {
-    this.timeoutSettings.customObj.timeoutSeconds = value;
+  setTimeoutDays = (value) => {
+    this.timeoutSettings.customObj.timeoutDays = value;
   };
 
   setIsEnableTimeout = (value) => {
@@ -151,9 +151,9 @@ class CommonStore {
   };
   saveTimeoutSettings = async () => {
     const { customObj } = this.timeoutSettings;
-    const { timeoutSeconds, enable } = customObj;
+    const { timeoutDays, enable } = customObj;
 
-    await setTimeoutSettings(timeoutSeconds, enable);
+    await setTimeoutSettings(timeoutDays, enable);
   };
 
   getDNSSettings = async () => {

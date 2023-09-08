@@ -189,7 +189,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "시간대",
   "TrustedMail": "신뢰할 수있는 메일 도메인 설정",
   "TrustedMailHelper": "커스텀 도메인 옵션을 선택하고 아래 입력란에 신뢰할 수 있는 메일 서버를 입력하여 계정 소유자가 로그인 페이지에서 가입 링크를 클릭하여 등록할 수 있도록 하거나 이 옵션을 비활성화하세요.",

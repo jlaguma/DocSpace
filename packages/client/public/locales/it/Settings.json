@@ -190,7 +190,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Fuso orario",
   "TrustedMail": "Dominio affidabile",
   "TrustedMailDescription": "<1>Impostazioni di dominio affidabile</1> ti permettono di specificare i server di posta elettronica che si usano per la registrazione degli utenti. <br> Puoi sia spuntare l'opzione <2>Domini personalizzati</2> ed inserisci il server di posta elettronica nel campo di sotto perchè ogni persona che ha un account sul server specificato avrà la possibilità di registrarsi cliccando sul collegamento <3>Accedi</3> nella pagina di accesso o disattivare questa opzione. <br> Per applicare i parametri impostati clicca su <4>Salva</4> nella parte inferiore della sezione.",

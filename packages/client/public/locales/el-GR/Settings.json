@@ -189,7 +189,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Ζώνη ώρας",
   "TrustedMail": "Ρυθμίσεις τομέα αξιόπιστης αλληλογραφίας",
   "TrustedMailHelper": "Μπορείτε είτε να επιλέξετε το Προσαρμοσμένοι τομείς και να εισάγετε τον διακομιστή αξιόπιστης αλληλογραφίας στο παρακάτω πεδίο, ώστε ένα άτομο που έχει λογαριασμό σε αυτόν να μπορεί να εγγραφεί μόνο του κάνοντας κλικ στον σύνδεσμο Συμμετοχή στη σελίδα Είσοδος, είτε να απενεργοποιήσετε αυτήν την επιλογή.",

@@ -192,7 +192,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "时区",
   "TrustedMail": "受信任的邮件域设置",
   "TrustedMailHelper": "您可以勾选自定义域名选项，并在下面的字段中输入受信任的邮件服务器，这样在该服务器上有账户的人就可以通过点击登录页面上的加入链接来注册他（她）自己，或者禁用这个选项",

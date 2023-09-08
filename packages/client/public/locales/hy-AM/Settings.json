@@ -197,7 +197,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Ժամային գոտի",
   "TrustedMail": "Վստահելի փոստի տիրույթի կարգավորումներ",
   "TrustedMailDescription": "<1>Վստահելի փոստի տիրույթի կարգավորումները</1> միջոց է նշելու փոստի սերվերները, որոնք օգտագործվում են օգտատերերի ինքնագրանցման համար: <br> Դուք կարող եք կամ ստուգել <2>Պատվիրված տիրույթներ</2> տարբերակը և մուտքագրել վստահելի փոստի սերվերը ստորև դաշտում, որպեսզի այնտեղ հաշիվ ունեցող անձը կարողանա ինքն իրեն գրանցել՝ սեղմելով <3>Մուտք գործեք</3> էջում միանալ հղումը կամ անջատեք այս տարբերակը: <br> Ձեր սահմանած պարամետրերն ուժի մեջ մտնելու համար սեղմեք <4>Պահել</4> կոճակը բաժնի ներքևում:",

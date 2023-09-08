@@ -53,9 +53,9 @@ const TimeoutSettings = (props) => {
     currentColorScheme,
     standalone,
     setIsEnableTimeout,
-    setTimeoutSeconds,
+    setTimeoutDays,
     saveTimeoutSettings,
-    timeoutSeconds,
+    timeoutDays,
     enable,
     isDefaultTimeout,
   } = props;
@@ -101,7 +101,7 @@ const TimeoutSettings = (props) => {
 
   const onSaveSettings = async () => {
     try {
-      if (!timeoutSeconds?.trim()) {
+      if (!timeoutDays?.trim()) {
         setIsError(true);
         return;
       }
@@ -131,7 +131,7 @@ const TimeoutSettings = (props) => {
 
   const onChangeTextInput = (e) => {
     const { value } = e.target;
-    setTimeoutSeconds(value);
+    setTimeoutDays(value);
   };
   const checkInnerWidth = useCallback(() => {
     if (!isSmallTablet()) {
@@ -175,14 +175,14 @@ const TimeoutSettings = (props) => {
           <FieldContainer
             id="fieldContainerPortalRenaming"
             className="field-container-width"
-            labelText={`${t("TimeoutSettingsDefaultTimeoutSeconds")}`}
+            labelText={`${t("TimeoutSettingsDefaultTimeoutDays")}`}
             isVertical={true}
           >
             <TextInput
               tabIndex={10}
-              id="textInputContainerTimerSettings"
+              id="textInputContainerTimerDays"
               scale={true}
-              value={timeoutSeconds}
+              value={timeoutDays}
               onChange={onChangeTextInput}
               isDisabled={isLoading || enable === "0"}
               hasError={isError}
@@ -278,20 +278,20 @@ export default inject(({ auth, common }) => {
     setIsLoaded,
     timeoutSettings,
     setIsEnableTimeout,
-    setTimeoutSeconds,
+    setTimeoutDays,
     saveTimeoutSettings,
     isDefaultTimeout,
   } = common;
   const { currentQuotaStore } = auth;
   const { isBrandingAndCustomizationAvailable } = currentQuotaStore;
   const { customObj } = timeoutSettings;
-  const { timeoutSeconds, enable } = customObj;
+  const { timeoutDays, enable } = customObj;
 
   return {
     isDefaultTimeout,
-    timeoutSeconds,
+    timeoutDays,
     enable,
-    setTimeoutSeconds,
+    setTimeoutDays,
     isLoaded,
     setIsLoadedTimeoutSettings,
     initSettings,

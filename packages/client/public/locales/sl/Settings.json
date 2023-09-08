@@ -197,7 +197,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Časovni pas",
   "TrustedMail": "Nastavitve zaupanja vredne poštne domene",
   "TrustedMailDescription": "<1>Nastavitve zaupanja vredne poštne domene</1> je način, kako opredeliti poštne strežnike za uporabniško samo-registracijo. <br> Možnost lahko omogočite <2>Domene po-meri</2> in v spodnje polje vnesete zaupanja vreden poštni strežnik, da se bo oseba, ki ima račun, lahko registrirala s pritiskom na pridružitveno povezavo na <3>Prijava</3> strani, ali pa to možnost onemogočite. <br> Da bodo izbrani parametri začeli delovati, prosim pritisnite gumb <4>Shrani</4> na dnu oddelka.",

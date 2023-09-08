@@ -187,7 +187,7 @@
   "TimeoutSettingsDescription": "Timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsTooltip": "Default timeout time given to folders / files. After this time is elapsed, folder / file is moved to archive.",
   "TimeoutSettingsToggle": "Files / Folders timeout",
-  "TimeoutSettingsDefaultTimeoutSeconds": "Default timeout (seconds)",
+  "TimeoutSettingsDefaultTimeoutDays": "Default timeout (days)",
   "TimeZone": "Aikavyöhyke",
   "TrustedMail": "Luotetut sähköpostiverkkotunnukset",
   "TrustedMailHelper": "Voit ottaa ominaisuuden käyttöön ja lisätä yhden tai useamman luotetun sähköpostipalvelimen tiedot. Nyt kuka tahansa, jolla on tili luotetulla sähköpostipalvelimella, voi rekisteröidä itsensä valitsemalla kirjautumissivulla Klikkaa tästä liittyäksesi mukaan ja syöttämällä sähköpostiosoitteensa. Voit ottaa tämän toiminnon pois päältä Ei käytössä valinnalla.",
