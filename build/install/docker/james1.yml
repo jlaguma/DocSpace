@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   onlyoffice-proxy:
-    image: "onlyoffice/docspace-proxy:latest"
+    image: "onlyoffice/4testing-docspace-proxy-runtime:v1.0.0"
     container_name: onlyoffice-proxy
     restart: always
     healthcheck:
@@ -13,6 +13,11 @@ services:
       - "8092"
     ports:
       - 8092:8092
+    environment:
+      BUILD_PATH: "/var/www"
+      SRC_PATH: "/home/james/DocSpace/publish/services"
+      ROOT_DIR: "/home/james/DocSpace"
+      ENV_EXTENSION: "dev"
     environment:
       - SERVICE_BACKUP=onlyoffice-backup:5050
       - SERVICE_FILES=onlyoffice-files:5050
@@ -28,11 +33,13 @@ services:
       - SERVICE_SSOAUTH=onlyoffice-ssoauth:5050
       - SERVICE_DOCEDITOR=192.168.0.36:5013
       - SERVICE_LOGIN=192.168.0.36:5011
+      - SERVICE_CLIENT=192.168.0.36:5001
       - SERVICE_HELTHCHECKS=onlyoffice-healthchecks:5050
       - DOCUMENT_SERVER=onlyoffice-document-server
       - SERVICE_PORT=5050
     volumes:
       - proxy_log:/var/log/nginx
+      - /home/james/DocSpace/public:/var/www/public/
 
 networks:
   default:
