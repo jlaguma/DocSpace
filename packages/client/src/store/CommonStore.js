@@ -172,7 +172,9 @@ class CommonStore {
   };
 
   getTimeoutSettings = async () => {
+    console.log("XXX calling  api.settings.getTimeoutSettings()");
     const res = await api.settings.getTimeoutSettings();
+    console.log("XXX result:", res);
     this.setTimeoutSettings(res);
     return res;
   };
