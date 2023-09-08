@@ -271,8 +271,8 @@ services:
 
 networks:
   default:
-    name: ${NETWORK_NAME}
-    external: false
+    name: onlyoffice
+    external: true
 
 volumes:
   es_data:
