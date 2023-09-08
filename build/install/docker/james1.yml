@@ -14,11 +14,10 @@ services:
     ports:
       - 8092:8092
     environment:
-      BUILD_PATH: "/var/www"
-      SRC_PATH: "/home/james/DocSpace/publish/services"
-      ROOT_DIR: "/home/james/DocSpace"
-      ENV_EXTENSION: "dev"
-    environment:
+      - BUILD_PATH="/var/www"
+      - SRC_PATH="/home/james/DocSpace/publish/services"
+      - ROOT_DIR="/home/james/DocSpace"
+      - ENV_EXTENSION="dev"
       - SERVICE_BACKUP=onlyoffice-backup:5050
       - SERVICE_FILES=onlyoffice-files:5050
       - SERVICE_FILES_SERVICES=onlyoffice-files-services:5050
